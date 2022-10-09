@@ -17,6 +17,7 @@
 */
 @import "_blocks/container";
 @import "_blocks/flexbox_column";
+@import "_blocks/button";
 @import "_blocks/footer";
 @import "_blocks/header";
 
@@ -26,86 +27,73 @@
   min-height: 372px;
   position: relative;
   padding-top: 17px;
-}
-
-.banner__switcher{
-  display: inline-block;
-}
-
-.banner__number{
-  font-family: 'Montserrat', 'Arial' sans-serif;
-  font-size: 60px;
-  font-weight: 200;
-  color: rgba(30, 6, 6, 0.05);
-  line-height: 73.14px;
-  margin-top: 50px;
-  margin-left: 28px;
-}
-
-.banner__stick{
-  margin-top: 10px;
-  margin-left: 3px;
-}
-
-.stick:hover{
-  background-color: #1E060699;
-}
-
-.stick-1{
-  background-color: #1E060699;
-}
-
-.stick{
-  background-color: #D6CAC2;   
-}
-
-.stick, .stick-1{
-  display: block;
-  width: 31px;
-  height: 3px;
-  margin-bottom: 11px;
-  border: none;
-  cursor: pointer;
-  margin-left: 28px;
-}
-
-.banner__description{
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 74px;
-  margin-left: 42px;
-  max-width: 307px;
-}
-
-.banner__title{
-  line-height: 110%;
-}
-
-.design{
-  margin-top: 16px;
-  margin-bottom: 21px;
-}
-
-.banner__image{
-  width: 635px;
-  height: 461px;
-  position: absolute;
-  bottom: 0;
-  left: 445px;
-}
-
-.banner__shipping{
-  background-color: #C29974;
-  display: flex;
-  height: 39px;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner__shipping-text{
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;
+    &__switcher{
+      display: inline-block;
+    }
+    &__number{
+      font-family: 'Montserrat', 'Arial' sans-serif;
+      font-size: 60px;
+      font-weight: 200;
+      color: rgba(30, 6, 6, 0.05);
+      line-height: 73.14px;
+      margin-top: 50px;
+      margin-left: 28px;
+    }
+    &__sticklist{
+      margin-top: 10px;
+      margin-left: 3px;
+      &__stick{
+        display: block;
+        width: 31px;
+        height: 3px;
+        margin-bottom: 11px;
+        border: none;
+        cursor: pointer;
+        margin-left: 28px;
+        &_first{
+          background-color: #1E060699;
+        }
+        &_inactive{
+          background-color: #D6CAC2; 
+        }
+        &:hover{
+          background-color: #1E060699;
+        }
+      }
+    }
+    &__description{
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 74px;
+      margin-left: 42px;
+      max-width: 307px;
+    }
+    &__title{
+      line-height: 110%;
+    }
+    &__text{
+      margin-top: 16px;
+      margin-bottom: 21px;
+    }
+    &__image{
+      width: 635px;
+      height: 461px;
+      position: absolute;
+      bottom: 0;
+      left: 445px;
+    }
+    &__shipping{
+      background-color: #C29974;
+      display: flex;
+      height: 39px;
+      align-items: center;
+      justify-content: center;
+      &-text{
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
 }
 
 .category__products{
@@ -337,4 +325,51 @@
 .map{
   margin-top: -74px;
   margin-bottom: 44px;
+}
+
+// стили для блога
+
+.pages__blog{
+  margin-left: 4px;
+}
+
+.blog__list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 36px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.blog__list_item{
+  max-width: 380px;
+}
+
+.blog__list_item>a:hover,
+.blog__list_item>a:active{
+  text-decoration: underline;
+}
+
+.blog__image{
+  margin-bottom: 15px;
+}
+
+.blog__date{
+  display: inline-block;
+  color: #818181;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+
+.blog__title{
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.blog__description{
+  font-size: 18px;
 }

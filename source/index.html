@@ -34,25 +34,29 @@
           <div class="banner">
               <div class="banner__switcher">
                   <span class="banner__number">01</span>
-                  <ul class="banner__stick">
-                      <li class="banner__stick-item">
-                          <button type="button" class="stick-1"></button>
+                  <ul class="banner__sticklist">
+                      <li>
+                          <button type="button" class="banner__sticklist__stick banner__sticklist__stick_first"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__sticklist__stick banner__sticklist__stick_inactive"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__sticklist__stick banner__sticklist__stick_inactive"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__sticklist__stick banner__sticklist__stick_inactive"></button>
                       </li>
                   </ul>
               </div>
               <div class="banner__description">
-                  <h1 class="bold banner__title">THE OOH NOO COLLECTION</h1>
-                  <p class="design italic small">Designed in Slovenia</p>
-                  <button type="button" class="button bold btn-js">EXPLORE NOW</button>
+                  <h1 class="banner__title bold">THE OOH NOO COLLECTION</h1>
+                  <p class="banner__text italic small">Designed in Slovenia</p>
+                  @@include('blocks/button.html', {
+                    "type": "button",
+                    "class": "btn-js",
+                    "text": "explore now"
+                  })
               </div>
           <img width="635" height="461" class="banner__image" src="/img/images/monster.png" alt="banner image">
           </div>
@@ -115,7 +119,11 @@
                   <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                   <p class="delivery__second_p">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
               </div>
-              <a href="#" class="button bold delivery__btn">LEARN MORE</a>
+              @@include('blocks/button.html', {
+                "type": "button",
+                "class": "delivery__btn",
+                "text": "learn more"
+              })
           </div>
       </section>
       <section class=" awards__section container">
@@ -141,7 +149,11 @@
               <div class="design__wrap">
                   <p class="italic big">About Us</p>
                   <p class="design_and_contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                  <button type="button" class="button bold design__btn">buy now</button>
+                  @@include('blocks/button.html', {
+                    "type": "button",
+                    "class": "design__btn",
+                    "text": "buy now"
+                  })
               </div>
           </section>
           <section class="contacts__section">

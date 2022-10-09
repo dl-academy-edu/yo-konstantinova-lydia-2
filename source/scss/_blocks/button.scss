@@ -1,0 +1,26 @@
+.button{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #000;
+    padding: 9px 22px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+  .button:hover{
+    background-color: #C29974;
+  }
+  
+  .button:active{
+    background-color: #CFAF91;
+  }
+  
+  .button:disabled{
+    background-color: #C7C1C1;
+    cursor: auto;
+  }

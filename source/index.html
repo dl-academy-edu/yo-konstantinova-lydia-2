@@ -165,37 +165,15 @@
   </main>
     @@include('blocks/footer.html')
   <!--PopUp-->
-  <section class="feedback__wrap">
+  <section class="feedback-wrap">
       <h2 class="hidden">feedback form</h2>
-      <div class="popup__wrap">
-        <form action="#" class="popup">
-            <fieldset class="feedback__form roboto">
-                <div class="feedback__form_name">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" class="input__name input__border">
-                </div>
-                <div class="phone_and_email__wrap">
-                    <div class="phone__wrap">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" class="input__phone_and_email input__border">
-                    </div>
-                    <div class="email__wrap">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="input__phone_and_email input__border">
-                    </div>
-                </div>
-                <div class="message__wrap">
-                    <label for="message">Message</label>
-                    <textarea id="message" cols="10" rows="10" maxlength="700" class="input__message input__border"></textarea>
-                </div>
-                <div class="agreement__wrap">
-                    <input type="checkbox" id="personaldata" class="checkbox form_checkbox">
-                    <label for="personaldata">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                    <button disabled="" type="submit" class="button  form__button bold">Submit</button>
-            </fieldset>     
-        </form>
-        <button type="button" class="close__btn"></button>
+      <div class="feedback-wrap__form-wrap">
+        @@include('blocks/form.html', {
+            "class": "roboto",
+            "js-cb-class": "form-checkbox",
+            "js-btn-class": "form-button",
+        })
+        <button type="button" class="feedback-wrap__close-btn"></button>
       </div>
   </section>
     <script src="js/app.js" defer></script>

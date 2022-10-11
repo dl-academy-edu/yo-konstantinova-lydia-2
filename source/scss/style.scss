@@ -19,6 +19,8 @@
 @import "_blocks/flexbox_column";
 @import "_blocks/button";
 @import "_blocks/form";
+@import "_blocks/pagination";
+@import "_blocks/breadcrumbs";
 @import "_blocks/footer";
 @import "_blocks/header";
 
@@ -285,164 +287,40 @@
 
 // стили для попапа
 
-.feedback__wrap{
+.feedback-wrap{
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #7D97DACC;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   z-index: 9999;
-}
-
-.feedback__wrap_open{
-  display: flex;
-}
-
-.popup__wrap{
-  display: flex;
-  gap: 10px;
-  margin: auto;
-}
-
-.close__btn{
-  width: 15px;
-  height: 15px;
-  border: none;
-  background-color: transparent;
-  background-image: url(/static/icons/close_btn.svg);
-  cursor: pointer;
-}
-
-.close__btn:hover{
-  opacity: 0.7;
-}
-
-.close__btn:active{
-  opacity: 0.4;
-}
-
-.roboto{
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-}
-
-.feedback__form{
-  width: 680px;
-  padding: 42px 40px;
-  background-color: #E5EAF8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.feedback__form_name, .phone__wrap, .email__wrap{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3px;
-}
-
-.input__border{
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.input__name{
-  width: 600px;
-  height: 50px;
-  margin-top: 4px;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-bottom: 11px;
-}
-
-.input__name:hover,
-.input__name:active, 
-.input__phone_and_email:hover, 
-.input__phone_and_email:active,
-.input__message:hover, 
-.input__message:active{
-  border: 1px solid #C29974;
-}
-
-.input__name:disabled, 
-.input__phone_and_email:disabled,
-.input__message:disabled{
-  border: 1px solid #EBEBEB;
-}
-
-.phone_and_email__wrap{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.input__phone_and_email{
-  width: 290px;
-  height: 50px;
-  margin-top: 4px;
-}
-
-.message__wrap{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
-  gap: 3px;
-}
-
-.input__message{
-  resize: none;
-  max-height: 150px;
-  margin-top: 5px;
-}
-
-.agreement__wrap{
-  margin-top: 19px;
-  margin-bottom: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  line-height: 16px;
-  gap: 15px;
-}
-
-.form__button{
-  max-width: 106px;
-  margin-top: 10px;
+  &_open{
+    display: flex;
+  }
+  &__form-wrap{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+  }
+  &__close-btn{
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    background-image: url(/img/icons/close_btn.svg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+    }
+    &:active{
+      opacity: 0.4;
+    }
+  }
 }
 
 // стили для блога
-
-.pages__blog{
-  margin-left: 4px;
-}
 
 .blog__list{
   display: flex;

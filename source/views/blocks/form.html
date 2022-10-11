@@ -1,0 +1,27 @@
+<form action="#">
+    <fieldset class="form @@class">
+        <div class="form__name flexbox-column">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form__input form__input_name">
+        </div>
+        <div class="form__contacts-wrap">
+            <div class="form__contacts-wrap-input flexbox-column">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="form__input form__input_contacts">
+            </div>
+            <div class="form__contacts-wrap-input flexbox-column">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form__input form__input_contacts">
+            </div>
+        </div>
+        <div class="form__message-wrap flexbox-column">
+            <label for="message">Message</label>
+            <textarea id="message" cols="10" rows="10" maxlength="700" class="form__input form__input_message"></textarea>
+        </div>
+        <div class="form__agreement-wrap">
+            <input type="checkbox" id="personaldata" class="checkbox @@js-cb-class">
+            <label for="personaldata">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+            <button disabled="" type="submit" class="button @@js-btn-class">Submit</button>
+    </fieldset>     
+</form>

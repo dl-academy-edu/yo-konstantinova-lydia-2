@@ -10,17 +10,15 @@
     font-family: 'Open Sans', sans-serif;
     border: none;
     text-transform: uppercase;
+    &:hover{
+      background-color: #C29974;
+    }
+    &:active{
+      background-color: #CFAF91;
+    }
+    &:disabled{
+      background-color: #C7C1C1;
+      cursor: auto;
+    }
   }
   
-  .button:hover{
-    background-color: #C29974;
-  }
-  
-  .button:active{
-    background-color: #CFAF91;
-  }
-  
-  .button:disabled{
-    background-color: #C7C1C1;
-    cursor: auto;
-  }

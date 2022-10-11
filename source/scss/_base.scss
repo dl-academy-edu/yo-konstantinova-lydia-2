@@ -49,66 +49,11 @@ h2{
   display: none;
 }
 
-/* навигация по страницам */
-
-.title__section{
-  margin-top: 57px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.roboto{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
-.pages__navlist{
-  display: flex;
-  gap: 20px;
-}
-
-.pages__navlist_current{
-  opacity: 0.5;
-}
-
-/* пагинация */
-
-.pagination{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 42px;
-  margin-bottom: 57px;
-}
-
-.pagination__arrow_left:hover{
-  background-image: url(/img/icons/swipe_left_hover.svg);
-}
-
-.pagination__arrow_right:hover{
-  background-image: url(/img/icons/swipe_right_hover.svg);
-}
-
-.pagination__arrow_left:active{
-  background-image: url(/img/icons/swipe_left_hover.svg);
-  opacity: 0.7;
-}
-
-.pagination__arrow_right:active{
-  background-image: url(/img/icons/swipe_right_hover.svg);
-  opacity: 0.7;
-}
-
-.pagination__pages{
-  display: flex;
-  gap: 64px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.pagination__current_page{
-  color: #C29974;
-  margin-right: 3px;
-}
-
-.page:hover{
-  color: #AAAAAA;
-}
 
 /* чекбоксы */
 

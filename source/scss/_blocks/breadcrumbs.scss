@@ -1,9 +1,9 @@
 .breadcrumbs{
-    padding-top: 57px;
-    gap: 15px;
+    padding-top: 36px;
     &__list{
         display: flex;
         gap: 20px;
+        margin-top: -11px;
         &__list-item_current{
             opacity: 0.5;
         }

@@ -23,7 +23,7 @@
     &__agreement-wrap{
       display: flex;
       align-items: center;
-      margin: 19px 0 6px;
+      margin: 19px 0 20px;
       font-size: 14px;
       line-height: 16px;
       gap: 15px;
@@ -55,11 +55,8 @@
         margin-top: 5px;
       }
     }
+    &__button{
+      max-width: 106px;
+      margin-top: 10px;
+    }
   }
-  
-  .form__button{
-    max-width: 106px;
-    margin-top: 10px;
-  }
-    
-  

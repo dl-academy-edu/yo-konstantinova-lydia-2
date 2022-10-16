@@ -7,25 +7,17 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
     <title>DLK</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <script>
       var docElement = document.documentElement;
       docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
-
-    <!-- Favicon -->
-
-    <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- endbuild -->
   </head>
   <body>
     @@include('blocks/header.html')
@@ -117,7 +109,7 @@
               </ul>
               <div class="delivery-section__text">
                   <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                  <p class="delivery-section__text__second-p">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                  <p class="delivery-section__text__second-p">What started as an outlet to deal &nbsp;with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
               </div>
               @@include('blocks/button.html', {
                 "type": "button",
@@ -163,7 +155,7 @@
           </section>
       </div>
   </main>
-    @@include('blocks/footer.html')
+    @@include('blocks/footer.html'})
   <!--PopUp-->
   <section class="feedback-wrap">
       <h2 class="hidden">feedback form</h2>

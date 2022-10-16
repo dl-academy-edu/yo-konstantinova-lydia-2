@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Toy for kids</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="breadcrumbs container">
+            <h1>Toy for kids</h1>
+            <ul class="breadcrumbs__list italic small">
+                <li class="breadcrumbs__list__list-item">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__list__list-item">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                    </svg>
+                </li>
+                <li class="breadcrumbs__list__list-item">
+                    <a href="/catalog.html">Catalog</a>
+                </li>
+                <li class="breadcrumbs__list__list-item">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                    </svg>
+                </li>
+                <li class="breadcrumbs__list__list-item_current">
+                    <a href="/toys.html">Toys</a>
+                </li>
+            </ul>
+        </section>
+        <section class="filter-section">
+            <div class="container">
+                <h2 class="hidden">Filters</h2>
+                <form action="#" class="filter-section__wrap">
+                        <fieldset class="filter-section__filter filter-section__filter_cost">
+                            <label for="cost" class="filter-section__filter__name bold">Cost
+                            </label>
+                            <input type="range" id="cost" min="0" max="500" step="1" value="150">
+                            <div class="filter-section__filter_cost__range">
+                                <span>0</span>
+                                <span>500</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="filter-section__filter filter-section__filter_color">
+                            <legend class="filter-section__filter__name bold">Color</legend>
+                            <ul class="filter-section__filter_color__list flexbox-column">
+                                <li class="filter-section__filter_color__list__list-item">
+                                    <input type="checkbox" id="black" class="checkbox" checked>
+                                    <label for="black">Black</label>
+                                </li>
+                                <li class="filter-section__filter_color__list__list-item">
+                                    <input type="checkbox" id="blue" class="checkbox">
+                                    <label for="blue">Blue</label>
+                                </li>
+                                <li class="filter-section__filter_color__list__list-item">
+                                    <input type="checkbox" id="green" class="checkbox">
+                                    <label for="green">Green</label>
+                                </li>
+                                <li class="filter-section__filter_color__list__list-item">
+                                    <input type="checkbox" id="white" class="checkbox">
+                                    <label for="white">White</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="filter-section__filter filter-section__filter_delivery">
+                            <legend class="filter-section__filter__name bold">Delivery</legend>
+                            <div class="filter-section__filter_delivery__wrap">
+                                <input type="radio" name="shipping" id="free" class="filter-section__filter_delivery__radio filter-section__filter_delivery__radio_first">
+                                <label for="free">Free shipping</label>
+                            </div>   
+                            <div class="filter-section__filter_delivery__wrap">
+                                <input type="radio" name="shipping" id="fast" class="filter-section__filter_delivery__radio" checked>
+                                <label for="fast">Fast shipping</label>
+                            </div> 
+                        </fieldset>
+                        <fieldset class="filter-section__filter filter-section__filter_amount">
+                            <legend class="filter-section__filter__name bold">Amount</legend>
+                            <input type="radio" name="amount" id="few" class="filter-section__filter_amount__radio" checked>
+                            <label for="few" class="filter-section__filter_amount__label filter-section__filter_amount__label_first">0-5</label>
+                            <input type="radio" name="amount" id="more" class="filter-section__filter_amount__radio">
+                            <label for="more" class="filter-section__filter_amount__label">10-20</label>
+                            <input type="radio" name="amount" id="many" class="filter-section__filter_amount__radio">
+                            <label for="many" class="filter-section__filter_amount__label">20-50</label>
+                        </fieldset>
+                        <button type="submit" class="bold button filter-section__wrap__button">Apply</button>
+                </form>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="hidden">toys list</h2>
+            <ul class="toys-list">
+                <li class="toys-list__list-item">
+                    <img width="380" height="385" src="/img/images/shark.jpg" alt="shark chair cover" class="toys__list_img">
+                    <a href="">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="bold">$60.00 USD</p>
+                    </div>
+                </li>
+                <li class="toys-list__list-item">
+                    <img width="380" height="385" src="/img/images/brass.jpg" alt="brass deco frames">
+                    <a href="">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">BRASS DECO FRAMES</p>
+                        <p class="bold">$66.00 USD</p>
+                    </div>
+                </li>
+                <li class="toys-list__list-item">
+                    <img width="380" height="385" src="/img/images/apron.jpg" alt="apron">
+                    <a href="">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">CIBO FULL APRON</p>
+                        <p class="bold">$60.00 USD</p>
+                    </div>
+                </li>
+                <li class="toys-list__list-item">
+                    <img width="380" height="385" src="/img/images/gumball.jpg" alt="gumball machine">
+                    <a href="">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="bold">$56.00 USD</p>
+                    </div>
+                </li>
+                <li class="toys-list__list-item">
+                    <img width="380" height="385" src="/img/images/candle.jpg" alt="candle">
+                    <a href="" class="toys__list_link">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="bold">$29.00 USD</p>
+                    </div>
+                </li>
+                <li class="toys-list__list-item">
+                    <img width="380" height="382" src="/img/images/light.jpg" alt="tea light">
+                    <a href="" class="toys__list_link">LEARN MORE</a>
+                    <div class="toys-list__list-item__text flexbox-column">
+                        <p class="toys-list__list-item__name">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="bold">$56.00 USD</p>
+                    </div>
+                </li>
+            </ul>
+            @@include('blocks/pagination.html')
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

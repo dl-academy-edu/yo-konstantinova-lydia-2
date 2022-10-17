@@ -20,3 +20,9 @@
     display: table;
   }
 }
+
+@mixin flex-change ($column, $gap){
+  display: flex;
+  flex-direction: $column;
+  gap: $gap;
+}

@@ -1,33 +1,28 @@
 .header{
-    display: flex;
-    padding-top: 48px;
-    align-items: center;
-    text-transform: uppercase;
-    justify-content: space-between;
-    font-size: 14px;
-  }
-  
-  .nav__wrapper{
+  display: flex;
+  padding-top: 48px;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+  font-size: 14px;
+  &__nav__wrapper{
     display: flex;
     align-items: center;
   }
-  
-  .nav__list{
+  &__nav__navlist{
     display: flex;
     column-gap: 20.5px;
     margin-left: 58px;
-
-    &__item{
-      &:hover{
-        opacity: 0.5;
-      }
-      &:active{
-        opacity: 0.2;
-      }
+  }
+  &__nav__navlist__list-item{
+    &:hover{
+      opacity: 0.5;
+    }
+    &:active{
+      opacity: 0.2;
     }
   }
-  
-  .contact{
+  &__contact{
     display: flex;
     align-items: center;
     column-gap: 22px;
@@ -41,11 +36,12 @@
       opacity: 0.2;
     }
   }
-
-.logo:hover{
-  opacity: 0.5;
-}
-
-.logo:active{
-  opacity: 0.2;
+  &__logo{
+    &:hover{
+      opacity: 0.5;
+    }
+    &:active{
+      opacity: 0.2;
+    }
+  }
 }

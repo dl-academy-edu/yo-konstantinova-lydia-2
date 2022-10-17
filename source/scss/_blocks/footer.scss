@@ -27,16 +27,13 @@
           }
       }
     &__navlist{
-      row-gap: 15px;
+      @include flex-change(column, 15px);
         &__item{
           color: #FFFFFF;
           font-weight: 400;
-            &:hover{
-              color: #AAAAAA;
-              }
           }
         &_customer-info__list{
-          row-gap: 15px;
+          @include flex-change(column, 15px);
         }
        }
     &__lower-wrapper{
@@ -57,26 +54,15 @@
     &__form{
       margin-top: 25px;
       display: flex;
-      &_input{
+      &__input{
         width: 299px;
         height: 40px;
         background-color: #666666;
         border: none;
         font-family: 'Open Sans', sans-serif;
-          &::placeholder{
-            color: #EBEBEB;
-            padding: 9px 0 9px 15px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 16px;
-            line-height: 21.79px;
-            }
-           &:hover{
-            border: 2px solid #FFFFFF;
-            border-right: none;
-            }
         }
       }
-     &__navigation__socials{
+    &__navigation__socials{
       display: flex;
       margin-top: 22px;
       column-gap: 10px;
@@ -92,17 +78,6 @@
         padding: auto;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        &__link{
-          display: inline-block;
-          width: 30px;
-          height: 30px;
-        }
-          &:hover{
-            opacity: 0.5;
-          }
-          &:active{
-            opacity: 0.2;
-          }
         }       
       &>li:nth-child(1){
         background-image: url(/img/icons/facebook.svg);
@@ -129,77 +104,6 @@
         background-image: url(/img/icons/star.svg);
         background-size: 17px 16px;
         background-repeat: space;
-        &__star{
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 17px;
-          height: 17px;
-          appearance: none;
-          font-size: inherit;
-          margin: 0;
-          cursor: pointer;
-          &:nth-of-type(1){
-            z-index: 5; 
-            width: 17px;   
-            &:hover, :active, :focus{
-              background-image: url(/img/icons/star_chosen.svg);
-              z-index: 5; 
-              width: 17px;  
-              height: 17px;
-              background-repeat: no-repeat;
-              background-size: contain; 
-            }
-          }
-          &:nth-of-type(2){
-            z-index: 4; 
-            width: 35px; 
-            &:hover, :active, :focus{
-              background-image: url(/img/icons/star_chosen.svg);
-              z-index: 4; 
-              width: 38px;   
-              height: 16px;
-              background-size: contain;
-              background-repeat: space;
-            }  
-          }
-          &:nth-of-type(3){
-            z-index: 3;
-            width: 55px;  
-            &:hover, :active, :focus{
-              background-image: url(/img/icons/star_chosen.svg);
-              z-index: 3;
-              width: 57px; 
-              height: 16px;
-              background-size: contain;
-              background-repeat: space;   
-            }  
-          }
-          &:nth-of-type(4){
-            z-index: 2;
-            width: 77px;
-            &:hover, :active, :focus{
-              background-image: url(/img/icons/star_chosen.svg);
-              z-index: 2;
-              width: 77px;  
-              height: 16px;  
-              background-size: contain;
-              background-repeat: space; 
-            }    
-          }
-          &:nth-of-type(5){
-            z-index: 1; 
-            width: 97px;   
-            &:hover, :active, :focus{
-              background-image: url(/img/icons/star_chosen.svg);
-              z-index: 1; 
-              width: 97px;   
-              height: 16px;  
-              background-size: contain;
-              background-repeat: space; 
-            }
-          }
-        }
       }
     }
     &__copyright{
@@ -218,3 +122,126 @@
       }
     }
   }
+
+.footer__navlist__item{
+  &:hover{
+    color: #AAAAAA;
+    }
+}
+
+.footer__form__input{
+  &::placeholder{
+    color: #EBEBEB;
+    padding: 9px 0 9px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 21.79px;
+    }
+   &:hover{
+    border: 2px solid #FFFFFF;
+    border-right: none;
+    }
+}
+
+.footer__navigation__socials__item{
+  &__link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover{
+    opacity: 0.5;
+  }
+  &:active{
+    opacity: 0.2;
+  }
+}
+
+.footer__rating__rating-group{
+  &__star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    appearance: none;
+    font-size: inherit;
+    margin: 0;
+    cursor: pointer;
+    &:nth-of-type(1){
+      z-index: 5; 
+      width: 17px;   
+    }
+    &:nth-of-type(2){
+      z-index: 4; 
+      width: 35px; 
+    }
+    &:nth-of-type(3){
+      z-index: 3;
+      width: 55px;   
+    }
+    &:nth-of-type(4){
+      z-index: 2;
+      width: 77px; 
+    }
+    &:nth-of-type(5){
+      z-index: 1; 
+      width: 97px;   
+    }
+  }
+}
+
+.footer__rating__rating-group__star:nth-of-type(1){
+  &:hover, &:active, &:focus{
+    background-image: url(/img/icons/star_chosen.svg);
+    z-index: 5; 
+    width: 17px;  
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+  }
+}
+
+.footer__rating__rating-group__star:nth-of-type(2){
+  &:hover, &:active, &:focus{
+    background-image: url(/img/icons/star_chosen.svg);
+    z-index: 4; 
+    width: 38px;   
+    height: 16px;
+    background-size: contain;
+    background-repeat: space;
+  }  
+}
+
+.footer__rating__rating-group__star:nth-of-type(3){
+  &:hover, &:active, &:focus{
+    background-image: url(/img/icons/star_chosen.svg);
+    z-index: 3;
+    width: 57px; 
+    height: 16px;
+    background-size: contain;
+    background-repeat: space;   
+  } 
+}
+
+.footer__rating__rating-group__star:nth-of-type(4){
+  &:hover, &:active, &:focus{
+    background-image: url(/img/icons/star_chosen.svg);
+    z-index: 2;
+    width: 77px;  
+    height: 16px;  
+    background-size: contain;
+    background-repeat: space; 
+  }   
+}
+
+.footer__rating__rating-group__star:nth-of-type(5){
+  &:hover, &:active, &:focus{
+    background-image: url(/img/icons/star_chosen.svg);
+    z-index: 1; 
+    width: 97px;   
+    height: 16px;  
+    background-size: contain;
+    background-repeat: space; 
+  }
+}

@@ -9,8 +9,7 @@ body{
   text-decoration: none;
   color: #1E0606;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -45,15 +44,10 @@ h2{
   font-weight: 700;
 }
 
-.hidden{
-  display: none;
-}
-
 .roboto{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
-
 
 /* чекбоксы */
 

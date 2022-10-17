@@ -6,19 +6,19 @@
     font-size: 14px;
     line-height: 16px;
     &__name{
-      gap: 3px;
+      @include flex-change(column, 3px);
     }
     &__contacts-wrap{
       display: flex;
       margin-top: 20px;
       justify-content: space-between;
       &-input{
-        gap: 3px;
+        @include flex-change(column, 3px);
       }
     }
     &__message-wrap{
       margin-top: 20px;
-      gap: 3px;
+      @include flex-change(column, 3px);
     }
     &__agreement-wrap{
       display: flex;
@@ -31,7 +31,7 @@
     &__input{
       border: 1px solid rgba(0, 0, 0, 0.2);
       &:hover, :active{
-        border: 1px solid #C29974;
+        border: 1px solid $sand;
       }
       &:disabled{
         border: 1px solid #EBEBEB;

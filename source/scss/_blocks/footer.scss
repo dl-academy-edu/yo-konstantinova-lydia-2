@@ -49,6 +49,7 @@
         }
       &:hover .footer__rating__label{
         color: #C29974;
+        transition: color 400ms ease 1ms;
         }
       }
     &__form{
@@ -119,6 +120,7 @@
       &:hover{
         color: #FFFFFF;
         text-decoration: underline;
+        transition: color 400ms ease 1ms;
       }
     }
   }
@@ -126,6 +128,7 @@
 .footer__navlist__item{
   &:hover{
     color: #AAAAAA;
+    transition: color 400ms ease 1ms;
     }
 }
 
@@ -140,6 +143,7 @@
    &:hover{
     border: 2px solid #FFFFFF;
     border-right: none;
+    transition: border 400ms ease 1ms;
     }
 }
 
@@ -151,6 +155,7 @@
   }
   &:hover{
     opacity: 0.5;
+    transition: opacity 400ms ease 1ms;
   }
   &:active{
     opacity: 0.2;

@@ -5,7 +5,7 @@
     margin-top: 42px;
     margin-bottom: 57px;
     &__arrow-left{
-        &:hover, :active{
+        &:hover, &:active{
             background-image: url(/img/icons/swipe_left_hover.svg);
             }
         &:active{
@@ -13,7 +13,7 @@
         }
     }
     &__arrow-right{
-        &:hover, :active{
+        &:hover, &:active{
             background-image: url(/img/icons/swipe_right_hover.svg);
           }
         &:active{
@@ -24,14 +24,18 @@
         display: flex;
         gap: 64px;
         font-family: 'Montserrat', sans-serif;
-        &__page{
-            &:hover{
-                color: #AAAAAA;
-            }
-            &_current{
-                color: $sand;
-                margin-right: 3px;
-            }
-      }
     }
+}
+
+.pagination__pages-list{
+    &__page{
+        &:hover{
+            color: #AAAAAA;
+            transition: color 400ms ease 1ms;
+        }
+        &_current{
+            color: $sand;
+            margin-right: 3px;
+        }
+  }
 }

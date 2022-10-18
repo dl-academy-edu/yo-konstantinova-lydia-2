@@ -12,9 +12,11 @@
     text-transform: uppercase;
     &:hover{
       background-color: $sand;
+      transition: background-color 400ms ease 1ms;
     }
     &:active{
       background-color: #CFAF91;
+      transition: background-color 400ms ease 1ms;
     }
     &:disabled{
       background-color: #C7C1C1;

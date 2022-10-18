@@ -95,6 +95,7 @@
       }
       &:hover{
         background-color: #1E060699;
+        transition: background-color 400ms ease 1ms;
     }
   }
 }
@@ -164,7 +165,7 @@
     text-align: center;
     z-index: 1;
     &:hover,
-    :active{
+    &:active{
       text-decoration: underline;
     }
     &_first{
@@ -318,9 +319,11 @@
     cursor: pointer;
     &:hover{
       opacity: 0.7;
+      transition: opacity 400ms ease 1ms;
     }
     &:active{
       opacity: 0.4;
+      transition: opacity 400ms ease 1ms;
     }
   }
 }
@@ -335,7 +338,7 @@
   margin: 50px 0 45px;
   &__list-item{
     max-width: 380px;
-    &>a:hover, a:active{
+    &>a:hover, &a:active{
     text-decoration: underline;
     }
     &__image{

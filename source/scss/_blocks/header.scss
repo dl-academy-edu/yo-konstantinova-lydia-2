@@ -17,6 +17,7 @@
   &__nav__navlist__list-item{
     &:hover{
       opacity: 0.5;
+      transition: opacity 400ms ease 1ms;
     }
     &:active{
       opacity: 0.2;
@@ -30,6 +31,7 @@
 
     &:hover{
       opacity: 0.5;
+      transition: opacity 400ms ease 1ms;
     }
 
     &:active{
@@ -39,6 +41,7 @@
   &__logo{
     &:hover{
       opacity: 0.5;
+      transition: opacity 400ms ease 1ms;
     }
     &:active{
       opacity: 0.2;

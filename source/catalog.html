@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Catalog</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main class="container">
+        @@include('blocks/breadcrumbs.html', {
+            "title": "Category products",
+            "href": "catalog.html",
+            "text": "Catalog"
+        })
+        <section class="catalog">
+            <h2 class="hidden">catalog</h2>
+                <ul class="catalog__list catalog__list_first-row">
+                    <li class="catalog__list__list-item catalog__list__list-item_first">
+                        <img width="280" height="270" src="/img/images/apparel_kids.png" alt="sweater">
+                        <a href="#" class="catalog__list__list-item__name catalog__list__list-item__name_first bold big">APPAREL KIDS</a>
+                    </li>
+                    <li class="catalog__list__list-item catalog__list__list-item_second">
+                        <img width="208" height="244" src="/img/images/holiday_shop.png" alt="christmas stocking">
+                        <a href="#" class="catalog__list__list-item__name catalog__list__list-item__name_second bold big">HOLIDAY SHOP</a>
+                    </li>
+                    <li class="catalog__list__list-item catalog__list__list-item_third">
+                        <img width="270" height="270" src="/img/images/toys.png" alt="deer">
+                        <a href="toys.html" class="catalog__list__list-item__name catalog__list__list-item__name_third bold big">TOYS</a>
+                    </li>
+                </ul>
+                <ul class="catalog__list catalog__list_second-row">
+                    <li class="catalog__list__list-item catalog__list__list-item_fourth">
+                        <img width="240" height="250" src="/img/images/accessories.png" alt="yeti">
+                        <a href="#" class="catalog__list__list-item__name catalog__list__list-item__name_fourth bold big">ACCESSORIES</a>
+                    </li>
+                    <li class="catalog__list__list-item catalog__list__list-item_fifth">
+                        <img width="280" height="270" src="/img/images/flamingo.png" alt="flamingo">
+                        <a href="#" class="catalog__list__list-item__name catalog__list__list-item__name_fifth bold big">SALE</a>
+                    </li>
+                    <li class="catalog__list__list-item catalog__list__list-item_sixth">
+                        <img width="280" height="270" src="/img/images/apparel_adults.png" alt="dress">
+                        <a href="#" class="catalog__list__list-item__name catalog__list__list-item__name_sixth bold big">APPAREL<br>ADULTS</a>
+                    </li>
+                </ul>
+        </section>
+        <section class="product-description">
+            <h2>Product Description</h2>
+            <div class="product-description__text">
+                <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+            </div>
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

@@ -1,0 +1,41 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 57px;
+    &__arrow-left{
+        &:hover, &:active{
+            background-image: url(/img/icons/swipe_left_hover.svg);
+            }
+        &:active{
+            opacity: 0.7;
+        }
+    }
+    &__arrow-right{
+        &:hover, &:active{
+            background-image: url(/img/icons/swipe_right_hover.svg);
+          }
+        &:active{
+            opacity: 0.7;
+        }
+    }
+    &__pages-list{
+        display: flex;
+        gap: 64px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.pagination__pages-list{
+    &__page{
+        &:hover{
+            color: #AAAAAA;
+            transition: color 400ms ease 1ms;
+        }
+        &_current{
+            color: $sand;
+            margin-right: 3px;
+        }
+  }
+}

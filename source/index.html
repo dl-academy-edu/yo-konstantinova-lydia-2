@@ -7,120 +7,116 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
     <title>DLK</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <script>
       var docElement = document.documentElement;
       docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
-
-    <!-- Favicon -->
-
-    <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- endbuild -->
   </head>
   <body>
     @@include('blocks/header.html')
   <main>
       <section class="container">
-          <div class="banner__wrapper">
+          <div class="banner">
               <div class="banner__switcher">
-                  <span class="banner__number">01</span>
-                  <ul class="banner__stick">
-                      <li class="banner__stick_item">
-                          <button type="button" class="stick-1"></button>
+                  <span class="banner__switcher__number">01</span>
+                  <ul class="banner__switcher__sticklist">
+                      <li>
+                          <button type="button" class="banner__switcher__sticklist__stick banner__switcher__sticklist__stick_first"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__switcher__sticklist__stick banner__switcher__sticklist__stick_inactive"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__switcher__sticklist__stick banner__switcher__sticklist__stick_inactive"></button>
                       </li>
                       <li>
-                          <button type="button" class="stick"></button>
+                          <button type="button" class="banner__switcher__sticklist__stick banner__switcher__sticklist__stick_inactive"></button>
                       </li>
                   </ul>
               </div>
               <div class="banner__description">
-                  <h1 class="bold banner__title">THE OOH NOO COLLECTION</h1>
-                  <p class="design italic small">Designed in Slovenia</p>
-                  <button type="button" class="button bold btn-js">EXPLORE NOW</button>
+                  <h1 class="banner__description__title bold">THE OOH NOO COLLECTION</h1>
+                  <p class="banner__description__text italic small">Designed in Slovenia</p>
+                  @@include('blocks/button.html', {
+                    "type": "button",
+                    "class": "btn-js",
+                    "text": "explore now"
+                  })
               </div>
           <img width="635" height="461" class="banner__image" src="/img/images/monster.png" alt="banner image">
           </div>
           <div class="banner__shipping">
-              <p class="banner__shipping_text bold">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+              <p class="banner__shipping-text bold">Free (continental) USA shipping on all orders of $100 USD or more!</p>
           </div>
       </section>
-      <section class="category__products container">
+      <section class="category-products container">
           <h2 class="bold">Category Products</h2>
-          <ul class="category__list">
-              <li class="category__list_item first_item">
+          <ul class="category-products__list">
+              <li class="category-products__list-item category-products__list-item_first">
                   <img width="280" height="270" src="/img/images/apparel_kids.png" alt="sweater">
-                  <a href="#" class="category__name first_name bold big">APPAREL KIDS</a>
+                  <a href="#" class="category-products__list-item-name category-products__list-item-name_first bold big">APPAREL KIDS</a>
               </li>
-              <li class="category__list_item second_item">
-                  <img width="208" height="244" src="/img/images/holiday_shop.png" alt="christmas stocking" class="category__list_second_img">
-                  <a href="#" class="category__name second_name bold big">HOLIDAY SHOP</a>
+              <li class="category-products__list-item category-products__list-item_second">
+                  <img width="208" height="244" src="/img/images/holiday_shop.png" alt="christmas stocking" class="category-products__img_second">
+                  <a href="#" class="category-products__list-item-name category-products__list-item-name_second bold big">HOLIDAY SHOP</a>
               </li>
-              <li class="category__list_item third_item">
-                  <img width="270" height="270" src="/img/images/toys.png" alt="deer" class="category__list_third_img">
-                  <a href="/pages/toys.html" class="category__name third_name bold big">TOYS</a>
+              <li class="category-products__list-item category-products__list-item_third">
+                  <img width="270" height="270" src="/img/images/toys.png" alt="deer" class="category-products__img_third">
+                  <a href="/pages/toys.html" class="category-products__list-item-name category-products__list-item-name_third bold big">TOYS</a>
               </li>
-              <li class="category__list_item fourth_item">
-                  <img width="240" height="250" src="/img/images/accessories.png" alt="yeti" class="category__list_fourth_img">
-                  <a href="#" class="category__name fourth_name bold big">ACCESSORIES</a>
+              <li class="category-products__list-item category-products__list-item_fourth">
+                  <img width="240" height="250" src="/img/images/accessories.png" alt="yeti" class="category-products__img_fourth">
+                  <a href="#" class="category-products__list-item-name category-products__list-item-name_fourth bold big">ACCESSORIES</a>
               </li>
           </ul>
-          <div class="category__description">
-              <div class="category__slider">
-                  <button type="button" class="button_left">
-                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__size">
+          <div class="category-description">
+              <div class="category-description__slider">
+                  <button type="button" class="category-description__slider__button">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-size">
                           <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
                           </svg>
                   </button>
-                  <button type="button" class="button_right">
-                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__size">
+                  <button type="button" class="category-description__slider__button">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-size">
                           <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
                           </svg>
                   </button>
               </div>
-              <p class="category__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+              <p class="category-description__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
           </div>
       </section>
-      <section class="delivery__section container">
-          <img width="480" height="559" src="/img/images/woman.png" alt="woman" class="delivery__image">
-          <div class="delivery__section_wrapper">
-              <h2 class="bold delivery__title">Delivery</h2>
-              <ul class="delivery__list italic big">
-                  <li class="delivery__list_item fist_delivery_list_item bold">
+      <section class="delivery-section container">
+          <img width="480" height="559" src="/img/images/woman.png" alt="woman" class="delivery-section__image">
+          <div class="delivery-section__wrapper">
+              <h2 class="delivery-section__title bold">Delivery</h2>
+              <ul class="delivery-section__list italic big">
+                  <li class="delivery-section__list-item delivery-section__list-item_first bold">
                       Delivery
                   </li>
-                  <li class="delivery__list_item second_delivery_list_item">
+                  <li class="delivery-section__list-item delivery-section__list-item_second">
                       Guarantee
                   </li>
-                  <li class="delivery__list_item third_delivery_list_item">
+                  <li class="delivery-section__list-item delivery-section__list-item_third">
                       Credit
                   </li>
               </ul>
-              <div class="delivery__text">
+              <div class="delivery-section__text">
                   <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                  <p class="delivery__second_p">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                  <p class="delivery-section__text__second-p">What started as an outlet to deal &nbsp;with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
               </div>
-              <a href="#" class="button bold delivery__btn">LEARN MORE</a>
+              <a href="#" class="button delivery-section__btn">LEARN MORE</a>
           </div>
       </section>
-      <section class=" awards__section container">
+      <section class="awards-section container">
           <h2 class="hidden">awards</h2>
-          <ul class="awards__list">
+          <ul class="awards-section__list">
               <li>
                   <img width="193" height="60" src="/img/images/mail.png" alt="mail.ru group">
               </li>
@@ -135,55 +131,37 @@
               </li>
           </ul>
       </section>
-      <div class="design_and_contacts__wrapper container">
-          <section class="design__section">
-              <h2 class="bold design_and_contacts__title">Design Life Kids</h2>
-              <div class="design__wrap">
+      <div class="prefooter__wrapper container">
+          <section class="prefooter__section">
+              <h2 class="prefooter__section__title bold">Design Life Kids</h2>
+              <div class="prefooter__section__wrap">
                   <p class="italic big">About Us</p>
-                  <p class="design_and_contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                  <button type="button" class="button bold design__btn">buy now</button>
+                  <p class="prefooter__section__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                  @@include('blocks/button.html', {
+                    "type": "button",
+                    "class": "prefooter__section__btn",
+                    "text": "buy now"
+                  })
               </div>
           </section>
-          <section class="contacts__section">
-              <h2 class="bold design_and_contacts__title">Contacts</h2>
-              <p class="design_and_contacts__text contacts_text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5400080951604!2d49.289866529516296!3d53.51241204094353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1661971395827!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <section class="prefooter__section">
+              <h2 class="prefooter__section__title bold">Contacts</h2>
+              <p class="prefooter__section__text prefooter__section__text_contacts">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5400080951604!2d49.289866529516296!3d53.51241204094353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1661971395827!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="prefooter__section__map"></iframe>
           </section>
       </div>
   </main>
-    @@include('blocks/footer.html')
+    @@include('blocks/footer.html'})
   <!--PopUp-->
-  <section class="feedback__wrap">
+  <section class="feedback-wrap">
       <h2 class="hidden">feedback form</h2>
-      <div class="popup__wrap">
-          <form action="#" class="popup">
-              <fieldset class="feedback__form roboto">
-                  <div class="feedback__form_name">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" class="input__name input__border">
-                  </div>
-                  <div class="phone_and_email__wrap">
-                      <div class="phone__wrap">
-                          <label for="phone">Phone</label>
-                          <input type="tel" id="phone" class="input__phone_and_email input__border">
-                      </div>
-                      <div class="email__wrap">
-                          <label for="email">Email</label>
-                          <input type="email" id="email" class="input__phone_and_email input__border">
-                      </div>
-                  </div>
-                  <div class="message__wrap">
-                      <label for="message">Message</label>
-                      <textarea id="message" cols="10" rows="10" maxlength="700" class="input__message input__border"></textarea>
-                  </div>
-                  <div class="agreement__wrap">
-                      <input type="checkbox" id="personaldata" class="checkbox form_checkbox">
-                      <label for="personaldata">By clicking on the button, you consent to the processing of your personal data</label>
-                  </div>
-                      <button disabled="" type="submit" class="button  form__button bold">Submit</button>
-              </fieldset>     
-          </form>
-          <button type="button" class="close__btn"></button>
+      <div class="feedback-wrap__form-wrap">
+        @@include('blocks/form.html', {
+            "class": "roboto",
+            "js-cb-class": "form-checkbox",
+            "js-btn-class": "form-button",
+        })
+        <button type="button" class="feedback-wrap__close-btn"></button>
       </div>
   </section>
     <script src="js/app.js" defer></script>

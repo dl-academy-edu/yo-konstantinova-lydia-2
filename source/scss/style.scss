@@ -64,19 +64,8 @@
       bottom: 0;
       left: 445px;
     }
-    &__shipping{
-      background-color: $sand;
-      display: flex;
-      height: 39px;
-      align-items: center;
-      justify-content: center;
-      &-text{
-        color: white;
-        text-transform: uppercase;
-        font-size: 12px;
-      }
-    }
-}
+  }
+
 
 .banner__switcher__sticklist{
   &__stick{
@@ -98,6 +87,17 @@
         transition: background-color 400ms ease 1ms;
     }
   }
+}
+
+.shipping-section{
+  background-color: $sand;
+  display: flex;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .category-products{
@@ -253,11 +253,9 @@
 }
 
 .prefooter{
-  &__wrapper{
   display: flex;
   column-gap: 58px;
   padding-top: 5px;
-  }
   &__section{
     position: relative; 
     padding-left: 30px;
@@ -501,15 +499,15 @@
       margin-bottom: 15px;
       display: flex;
     }
+    &__range{
+      display: flex;
+      gap: 170px;
+      margin-top: 15px;
+    }
   }
 }
 
 .filter-section__filter_cost{
-  &__range{
-    display: flex;
-    gap: 170px;
-    margin-top: 15px;
-  }
   &>input{
     appearance: none;
     width: 188px;
@@ -534,7 +532,7 @@
   }
 }
 
-.filter-section__filter_color__list{
+.filter-section__filter__list{
     &__list-item{
       display: flex;
       gap: 10px;
@@ -550,15 +548,15 @@
     }
   }
 
-.filter-section__filter_delivery{
-  &__wrap{
+.filter-section__filter__delivery{
+  &-wrap{
     display: flex;
     gap: 10px;
     &>label{
       cursor: pointer;
     }
   }
-  &__radio{
+  &-radio{
     appearance: none;
     border: 2px solid $sand;
     width: 20px;
@@ -586,24 +584,24 @@
   }
 }
 
-.filter-section__filter_delivery__wrap>label{
+.filter-section__filter__delivery-wrap>label{
   &:hover, &:active{
     text-decoration: underline;
   }
 }
 
-.filter-section__filter_delivery__radio:disabled>label{
+.filter-section__filter__delivery-radio:disabled>label{
     color: #908484;
   }
 
-.filter-section__filter_amount{
-  &__radio{
+.filter-section__filter__amount{
+  &-radio{
     appearance: none;
     &:checked + label{
       background-color: #F3D0DB;
     }
   }
-  &__label{
+  &-label{
     width: 80px;
     height: 35px;
     background-color: #fff;
@@ -648,7 +646,7 @@
       opacity: 0.67;
     }
     &__text{
-      gap: 18px;
+      @include flex-change(column, 18px);
       text-align: center;
       margin-top: 28px;
     }
@@ -668,12 +666,12 @@
     @include flex-change(column, 20px);
     max-width: 380px;
     line-height: 22px;
-    &_upper{
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: $sand;
-      line-height: 34px;
-    }
+  }
+  &__title{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $sand;
+    line-height: 34px;
   }
 }

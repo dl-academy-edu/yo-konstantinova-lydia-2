@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Animation Scene</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <div class="container">
+            @@include('blocks/breadcrumbs.html', {
+                "title": "animation scene",
+                "href": "animation.html",
+                "text": "Animation"
+            })
+        </div>
+        <section class="animation-section ">
+            <img src="/img/animation/sky.png" alt="sky" class="sky-img">
+            <img src="/img/animation/city.png" alt="city" class="city-img">
+            <img src="/img/animation/lanterns.png" alt="lanterns" class="lanterns-img">
+            <img src="/img/animation/lantern.png" alt="lanterns" class="lantern-img">
+            <img src="/img/animation/car_one.png" alt="car" class="car-one-img">
+            <img src="/img/animation/car_two.png" alt="car" class="car-two-img">
+            <img src="/img/animation/car_three.png" alt="car" class="car-three-img">
+            <img src="/img/animation/car_four.png" alt="car" class="car-four-img">
+            <img src="/img/animation/suitcases.png" alt="suitcases" class="suitcases-img">
+            <img src="/img/animation/woman__sitting.png" alt="woman" class="woman-img">
+            <img src="/img/animation/man.png" alt="man" class="man-img">
+            <img src="/img/animation/mans_hand.png" alt="mans hand" class="mans-hand-img">
+            <img src="/img/animation/woman_says.png" alt="phrase" class="womans-line">
+            <img src="/img/animation/taxi.png" alt="taxi" class="taxi-img">
+            <img src="/img/animation/man_says.png" alt="phrase" class="mans-line">
+            <img src="/img/animation/driver_says.png" alt="phrase" class="drivers-line">
+            <img src="/img/animation/last_phrase.png" alt="phrase" class="last-line">
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

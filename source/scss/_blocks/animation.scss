@@ -1,0 +1,318 @@
+.animation-section{
+    overflow: hidden;
+    margin-top: 60px;
+    position: relative;
+}
+
+.sky-img{
+    width: 93%;
+    margin-left: 120px;
+}
+
+.city-img{
+    margin-left: -100px;
+}
+
+.lanterns-img{
+    position: absolute;
+    top: 180px;
+    left: 500px;
+    z-index: 5;
+}
+
+.lantern-img{
+    position: absolute;
+    top: 175px;
+    left: 1030px;
+    z-index: 7;
+}
+
+.car-one-img{
+    position: absolute;
+    top: 440px;
+    left: -56px;
+    animation: carone 10s linear 0.5s forwards 1;
+    z-index: 3;
+}
+
+@keyframes carone {
+    0%{
+        left: -56px;
+    }
+    100%{
+        left: 1800px;
+    }
+}
+
+.car-two-img{
+    position: absolute;
+    top: 430px;
+    left: 320px;
+    animation: cartwo 6s ease-out 0.5s forwards 1;
+    z-index: 2;
+}
+
+@keyframes cartwo {
+    0%{
+        left: 320px;
+    }
+    100%{
+        left: 1500px;
+    }
+}
+
+.car-three-img{
+    position: absolute;
+    top: 445px;
+    left: 615px;
+    z-index: 0;
+    animation: carthree 15s ease-out 0.5s forwards 1;
+}
+
+@keyframes carthree {
+    0%{
+        left: 615px;
+    }
+    100%{
+        left: 1800px;
+    }
+}
+
+.car-four-img{
+    position: absolute;
+    top: 422px;
+    left: 1230px;
+    z-index: 4;
+    animation: carfour 2s linear 0.5s 1 forwards;
+}
+
+@keyframes carfour {
+    0%{
+        left: 1230px;
+    }
+    100%{
+        left: 1500px;
+    }
+}
+
+.suitcases-img{
+    position: absolute;
+    top: 635px;
+    left: 170px;
+    z-index: 9;
+}
+
+.woman-img{
+    position: absolute;
+    top: 462px;
+    left: 180px;
+    z-index: 7;
+}
+
+.man-img{
+    position: absolute;
+    top: 375px;
+    left: 285px;
+    z-index: 8;
+}
+
+@keyframes hand {
+    0%{
+        transform: rotate(151deg);
+        top: 450px;
+        left: 245px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 330px;
+        left: 285px;
+    }
+}
+
+@keyframes handdown {
+    0%{
+        transform: rotate(0deg);
+        top: 330px;
+        left: 285px;
+    }
+    100%{
+        transform: rotate(151deg);
+        top: 450px;
+        left: 245px;
+    }
+}
+
+.mans-hand-img{
+    position: absolute;
+    top: 450px;
+    left: 245px;
+    transform: rotate(151deg);
+    z-index: 7;
+    animation-name: hand, handdown;
+    animation-duration: 10msm 10ms;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards, forwards;
+    animation-delay: 3s, 4.5s;
+}
+
+@keyframes line {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.womans-line{
+    position: absolute;
+    top: 355px;
+    left: 85px;
+    opacity: 0;
+    z-index: 10;
+    animation-name: line;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+@keyframes taxiin {
+    0%{
+        left: 1500px;
+    }
+    50%{
+        left: 800px;
+    }
+    100%{
+        left: 500px;
+    }
+}
+
+@keyframes taxiout {
+    0%{
+        left: 500px;
+    }
+    100%{
+        left: -1500px;
+    }
+}
+
+.taxi-img{
+    position: absolute;
+    top: 420px;
+    left: 1500px;
+    z-index: 6;
+    animation-name: taxiin, taxiout;
+    animation-duration: 3s, 5s;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 2s, 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mansline {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.mans-line{
+    position: absolute;
+    top: 295px;
+    left: 270px;
+    z-index: 2;
+    opacity: 0;
+    z-index: 10;
+    animation-name: mansline;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.drivers-line{
+    position: absolute;
+    top: 365px;
+    left: 810px;
+    z-index: 2;
+    opacity: 0;
+    animation-name: driversline;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 5.3s;
+    z-index: 10;
+}
+
+@keyframes driversline {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.last-line{
+    position: absolute;
+    top: 295px;
+    left: 270px;
+    opacity: 0;
+    z-index: 10;
+    animation-name: lastline;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+}
+
+@keyframes lastline {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

@@ -32,9 +32,6 @@
           color: #FFFFFF;
           font-weight: 400;
           }
-        &_customer-info__list{
-          @include flex-change(column, 15px);
-        }
        }
     &__lower-wrapper{
       display: flex;

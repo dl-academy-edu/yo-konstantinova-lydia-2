@@ -3,6 +3,9 @@
 .footer{
   background-color: #434343;
   padding: 100px 110px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    padding: 80px 60px;
+   }
     &__wrapper {
       display: flex;
       column-gap: 20px;
@@ -22,8 +25,14 @@
       border: none;
       margin-top: 23px;
       margin-bottom: 28px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+       width: 202px; 
+      }
         &_long{
           width: 1180px;
+          @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+            width: 648px; 
+           }
           }
       }
     &__navlist{
@@ -37,9 +46,17 @@
       display: flex;
       line-height: 22px;
       margin-top: -10px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+       }
       }
     &__rating{
       padding: 5px 0 0 0;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+        width: 100%; 
+       }
       &__label{
         color: #FFFFFF;
         font-weight: 400;
@@ -58,6 +75,9 @@
         background-color: #666666;
         border: none;
         font-family: 'Open Sans', sans-serif;
+        @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+          width: 121px; 
+         }
         }
       }
     &__navigation__socials{
@@ -109,11 +129,20 @@
       font-weight: 400;
       padding-left: 153px;
       padding-top: 5px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+        padding-top: 15px;
+        padding-left: 0;
+        width: 291px;
+       }
     }
     
     &__dl{
       color: #A2A2A2;
       padding: 5px 0 0 109px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        padding: 0;
+        width: 313px;
+       }
       &:hover{
         color: #FFFFFF;
         text-decoration: underline;
@@ -136,6 +165,9 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 21.79px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
+      padding: 9px 15px; 
+     }
     }
    &:hover{
     border: 2px solid #FFFFFF;

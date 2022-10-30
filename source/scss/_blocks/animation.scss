@@ -11,6 +11,7 @@
 
 .city-img{
     margin-left: -100px;
+    width: 108%;
 }
 
 .lanterns-img{
@@ -18,6 +19,14 @@
     top: 180px;
     left: 500px;
     z-index: 5;
+    @media screen and (min-width: $media-fhd) {
+        top: 35%;
+        left: 50%;
+    }
+    @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
+        top: 21%;
+        left: 31%;
+    }
 }
 
 .lantern-img{
@@ -25,12 +34,27 @@
     top: 175px;
     left: 1030px;
     z-index: 7;
+    @media screen and (min-width: $media-fhd) {
+        top: 38%;
+        left: 73%;
+    }
+    @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
+        top: 19%;
+        left: 70%;
+    }
 }
 
 .car-one-img{
     position: absolute;
     top: 440px;
     left: -56px;
+    @media screen  and (min-width: $media-fhd) {
+        top: 60%;
+        left: -5%;
+    }
+    @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
+        top: 57%;
+    }
     animation: carone 10s linear 0.5s forwards 1;
     z-index: 3;
 }
@@ -50,6 +74,10 @@
     left: 320px;
     animation: cartwo 6s ease-out 0.5s forwards 1;
     z-index: 2;
+    @media screen  and (min-width: $media-fhd) {
+        top: 59%;
+        left: 10%;
+    }
 }
 
 @keyframes cartwo {
@@ -66,6 +94,10 @@
     top: 445px;
     left: 615px;
     z-index: 0;
+    @media screen  and (min-width: $media-fhd) {
+        top: 61%;
+        left: 15%;
+    }
     animation: carthree 15s ease-out 0.5s forwards 1;
 }
 
@@ -83,6 +115,13 @@
     top: 422px;
     left: 1230px;
     z-index: 4;
+    @media screen  and (min-width: $media-fhd)  and (min-width: 1295px) and (max-width: $media-desktop){
+        top: 58%;
+        left: 85%;
+    }
+    @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
+        top: 54%;
+    }
     animation: carfour 2s linear 0.5s 1 forwards;
 }
 
@@ -91,7 +130,7 @@
         left: 1230px;
     }
     100%{
-        left: 1500px;
+        left: 1900px;
     }
 }
 
@@ -100,6 +139,10 @@
     top: 635px;
     left: 170px;
     z-index: 9;
+    @media screen and (min-width: $media-fhd) {
+        top: 85%;
+        left: 12%;
+    }
 }
 
 .woman-img{
@@ -107,6 +150,10 @@
     top: 462px;
     left: 180px;
     z-index: 7;
+    @media screen and (min-width: $media-fhd) {
+        top: 68%;
+        left: 13%;
+    }
 }
 
 .man-img{
@@ -114,6 +161,10 @@
     top: 375px;
     left: 285px;
     z-index: 8;
+    @media screen and (min-width: $media-fhd) {
+        top: 59%;
+        left: 19%;
+    }
 }
 
 @keyframes hand {
@@ -129,6 +180,33 @@
     }
 }
 
+@media screen and (min-width:$media-fhd) {
+    @keyframes hand {
+        0%{
+            transform: rotate(151deg);
+            top: 66%;
+            left: 17%;
+        }
+        100%{
+            transform: rotate(0);
+            top: 55%;
+            left: 19%;
+        }
+    }
+    @keyframes handdown-fhd {
+        0%{
+            transform: rotate(0);
+            top: 55%;
+            left: 19%; 
+        }
+        100%{
+            transform: rotate(151deg);
+            top: 66%;
+            left: 17%;
+        }
+    }
+}
+
 @keyframes handdown {
     0%{
         transform: rotate(0deg);
@@ -139,21 +217,25 @@
         transform: rotate(151deg);
         top: 450px;
         left: 245px;
+        }
     }
-}
 
 .mans-hand-img{
     position: absolute;
     top: 450px;
     left: 245px;
     transform: rotate(151deg);
+    @media screen and (min-width: $media-fhd) {
+        top: 66%;
+        left: 17%;
+    }
     z-index: 7;
-    animation-name: hand, handdown;
-    animation-duration: 10msm 10ms;
-    animation-timing-function: linear, linear;
-    animation-iteration-count: 1, 1;
-    animation-fill-mode: forwards, forwards;
-    animation-delay: 3s, 4.5s;
+    animation-name: hand, handdown, handdown-fhd;
+    animation-duration: 10ms 10ms 10ms;
+    animation-timing-function: linear, linear, linear;
+    animation-iteration-count: 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards;
+    animation-delay: 3s, 4.5s, 4.5s;
 }
 
 @keyframes line {
@@ -180,6 +262,10 @@
     left: 85px;
     opacity: 0;
     z-index: 10;
+    @media screen  and (min-width: $media-fhd) {
+        top: 57%;
+        left: 8%;
+    }
     animation-name: line;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -213,6 +299,13 @@
     top: 420px;
     left: 1500px;
     z-index: 6;
+    @media screen  and (min-width: $media-fhd) {
+        top: 60%;
+        left: 110%;
+    }
+    @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
+        top: 52%;
+    }
     animation-name: taxiin, taxiout;
     animation-duration: 3s, 5s;
     animation-iteration-count: 1, 1;
@@ -243,9 +336,12 @@
     position: absolute;
     top: 295px;
     left: 270px;
-    z-index: 2;
     opacity: 0;
     z-index: 10;
+    @media screen  and (min-width: $media-fhd) {
+        top: 50%;
+        left: 18.5%;
+    }
     animation-name: mansline;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -260,6 +356,9 @@
     left: 810px;
     z-index: 2;
     opacity: 0;
+    @media screen and (min-width: $media-fhd) {
+        top: 53%;
+    }
     animation-name: driversline;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -292,6 +391,10 @@
     left: 270px;
     opacity: 0;
     z-index: 10;
+    @media screen  and (min-width: $media-fhd) {
+        top: 50%;
+        left: 18.5%;
+    }
     animation-name: lastline;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -314,5 +417,52 @@
     }
     100%{
         opacity: 0;
+    }
+}
+
+// svg animation
+
+.svg-wrap{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.line{
+    animation: opacitychange 1s ease-in 0.5s infinite alternate;
+}
+
+@keyframes opacitychange {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+    }
+}
+
+.sun{
+    animation: sun 3s linear 0.5s infinite backwards;
+}
+
+@keyframes sun {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(27px,17px);
+    }
+}
+
+.sky{
+    fill: #5D9CEC;
+    animation: skyfill 3s linear 0.5s infinite backwards;
+}
+
+@keyframes skyfill {
+    from{
+        fill: #5D9CEC;
+    }
+    to{
+        fill: #2271b3;
     }
 }

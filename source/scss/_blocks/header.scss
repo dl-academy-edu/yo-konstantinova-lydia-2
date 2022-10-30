@@ -48,3 +48,22 @@
     }
   }
 }
+
+@media screen and (max-width: $media-tablet-landscape) {
+  .header{
+    display: none;
+  }
+}
+
+.header-mob{
+  display: none;
+}
+
+@media screen and (min-width:$media-phone) and (max-width: $media-tablet-landscape) {
+  .header-mob{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

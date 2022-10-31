@@ -6,17 +6,36 @@
   @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
     padding: 80px 60px;
    }
+   @media screen and (min-width: $media-phone) and (max-width: $media-tablet) {
+    padding: 70px 21px;
+   }
     &__wrapper {
       display: flex;
       column-gap: 20px;
       line-height: 22px;
       margin-bottom: 28px;
+      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 60px;
       }
+      }
+    &__navigation{
+      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: flex-start;
+      }
+    }
     &__title{
       color: #AAAAAA;
       font-weight: 400;
       font-size: 16px;
       }
+    &__navigation{
+      width: 100%;
+    }
     &__line{
       width: 380px;
       height: 1px;
@@ -28,20 +47,38 @@
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
        width: 202px; 
       }
+      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        width: 100%;
+        margin: 20px 0;
+      }
         &_long{
           width: 1180px;
           @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
             width: 648px; 
            }
+           @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+            width: 89%;
+            margin-bottom: 24px;
+          }
           }
       }
     &__navlist{
       @include flex-change(column, 15px);
+      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 100px;
+        width: 100%;
+        margin-bottom: 40px;
+      }
         &__item{
           color: #FFFFFF;
           font-weight: 400;
+          @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+            font-size: 14px;
           }
-       }
+        }
+      }
     &__lower-wrapper{
       display: flex;
       line-height: 22px;
@@ -51,12 +88,20 @@
         align-items: baseline;
         justify-content: space-between;
        }
+       @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 15px;
+      }
       }
     &__rating{
       padding: 5px 0 0 0;
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
         width: 100%; 
        }
+       @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        width: 100%;
+      }
       &__label{
         color: #FFFFFF;
         font-weight: 400;
@@ -69,6 +114,10 @@
     &__form{
       margin-top: 25px;
       display: flex;
+      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        margin-top: 0;
+        width: 100%;
+      }
       &__input{
         width: 299px;
         height: 40px;
@@ -78,6 +127,9 @@
         @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
           width: 121px; 
          }
+         @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+          width: 100%;
+        }
         }
       }
     &__navigation__socials{
@@ -134,6 +186,9 @@
         padding-left: 0;
         width: 291px;
        }
+       @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        padding: 0;
+      }
     }
     
     &__dl{
@@ -143,6 +198,9 @@
         padding: 0;
         width: 313px;
        }
+       @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+        padding: 0;
+      }
       &:hover{
         color: #FFFFFF;
         text-decoration: underline;
@@ -150,6 +208,12 @@
       }
     }
   }
+
+.footer__navlist_customer-info__list{
+  @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+    margin-bottom: 60px;
+  }
+}
 
 .footer__navlist__item{
   &:hover{

@@ -6,12 +6,18 @@
 
 .sky-img{
     width: 93%;
-    margin-left: 120px;
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .city-img{
     margin-left: -100px;
     width: 108%;
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape){
+        margin: 0;
+    }
 }
 
 .lanterns-img{
@@ -26,6 +32,12 @@
     @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
         top: 21%;
         left: 31%;
+    }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 60%;
+        height: 40%;
+        top: 34%;
+        left: 40%;
     }
 }
 
@@ -42,6 +54,12 @@
         top: 19%;
         left: 70%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        height: 65%;
+        top: 29%;
+        left: 77%;
+    }
 }
 
 .car-one-img{
@@ -55,9 +73,16 @@
     @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
         top: 57%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        position: absolute;
+        width: 15%;
+        top: 60%;
+        left: -56px;
+    }
     animation: carone 10s linear 0.5s forwards 1;
     z-index: 3;
 }
+
 
 @keyframes carone {
     0%{
@@ -77,6 +102,23 @@
     @media screen  and (min-width: $media-fhd) {
         top: 59%;
         left: 10%;
+    }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 58%;
+        left: 18%;
+        animation: cartwo-mob 6s ease-out 0.5s forwards 1;
+    }
+}
+
+@media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+    @keyframes cartwo-mob {
+        0%{
+            left: 18%;
+        }
+        100%{
+            left: 120%;
+        }
     }
 }
 
@@ -98,7 +140,24 @@
         top: 61%;
         left: 15%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 59%;
+        left: 18%;
+        animation: carthree-mob 15s ease-out 0.5s forwards 1;
+    }
     animation: carthree 15s ease-out 0.5s forwards 1;
+}
+
+@media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+    @keyframes carthree-mob {
+        0%{
+            left: 18%;
+        }
+        100%{
+            left: 150%;
+        }
+    }
 }
 
 @keyframes carthree {
@@ -122,7 +181,24 @@
     @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
         top: 54%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 57%;
+        left: 80%;
+        animation: carfour-mob 2s linear 0.5s 1 forwards;
+    }
     animation: carfour 2s linear 0.5s 1 forwards;
+}
+
+@media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+    @keyframes carfour-mob {
+        0%{
+            left: 80%;
+        }
+        100%{
+            left: 120%;
+        }
+    }
 }
 
 @keyframes carfour {
@@ -143,6 +219,11 @@
         top: 85%;
         left: 12%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 80%;
+        left: 18%;
+    }
 }
 
 .woman-img{
@@ -154,6 +235,11 @@
         top: 68%;
         left: 13%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        height: 30%;
+        top: 60.6%;
+        left: 19.8%;
+    }
 }
 
 .man-img{
@@ -164,6 +250,11 @@
     @media screen and (min-width: $media-fhd) {
         top: 59%;
         left: 19%;
+    }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        height: 40%;
+        top: 54%;
+        left: 28%;
     }
 }
 
@@ -178,6 +269,34 @@
         top: 330px;
         left: 285px;
     }
+}
+
+@media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+    @keyframes hand-mob {
+        0%{
+            transform: rotate(151deg);
+            top: 61.8%;
+            left: 25.7%;
+        }
+        100%{
+            transform: rotate(0deg);
+            top: 48.8%;
+            left: 28%;
+        }
+    }
+    
+    @keyframes handdown-mob {
+        0%{
+            transform: rotate(0deg);
+            top: 48.8%;
+            left: 28%;
+        }
+        100%{
+            transform: rotate(151deg);
+            top: 61.8%;
+            left: 25.7%;
+        }
+    }   
 }
 
 @media screen and (min-width:$media-fhd) {
@@ -229,13 +348,18 @@
         top: 66%;
         left: 17%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        height: 15%;
+        top: 61.8%;
+        left: 25.7%;
+    }
     z-index: 7;
-    animation-name: hand, handdown, handdown-fhd;
-    animation-duration: 10ms 10ms 10ms;
-    animation-timing-function: linear, linear, linear;
-    animation-iteration-count: 1, 1, 1;
-    animation-fill-mode: forwards, forwards, forwards;
-    animation-delay: 3s, 4.5s, 4.5s;
+    animation-name: hand, handdown, handdown-fhd, hand-mob, handdown-mob;
+    animation-duration: 10ms 10ms 10ms, 10ms, 10ms;
+    animation-timing-function: linear, linear, linear, linear, linear;
+    animation-iteration-count: 1, 1, 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards, forwards, forwards;
+    animation-delay: 3s, 4.5s, 4.5s, 3s, 4.5s;
 }
 
 @keyframes line {
@@ -266,11 +390,38 @@
         top: 57%;
         left: 8%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 43%;
+        left: 11%;
+    }
     animation-name: line;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-delay: 1s;
+}
+
+@media screen and (min-width:$media-phone) and (max-width: $media-tablet-landscape) {
+    @keyframes taxiin-mob {
+        0%{
+            left: 100%;
+        }
+        50%{
+            left: 50%;
+        }
+        100%{
+            left: 30%;
+        }
+    }
+    @keyframes taxiout-mob {
+        0%{
+            left: 30%;
+        }
+        100%{
+            left: -120%;
+        }
+    }
 }
 
 @keyframes taxiin {
@@ -306,11 +457,16 @@
     @media screen and (min-width: 1295px) and (max-width: $media-desktop) {
         top: 52%;
     }
-    animation-name: taxiin, taxiout;
-    animation-duration: 3s, 5s;
-    animation-iteration-count: 1, 1;
-    animation-timing-function: linear, ease-out;
-    animation-delay: 2s, 7s;
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 60%;
+        top: 54%;
+        left: 100%;
+    }
+    animation-name: taxiin, taxiout, taxiin-mob, taxiout-mob;
+    animation-duration: 3s, 5s, 3s, 5s;
+    animation-iteration-count: 1, 1, 1, 1;
+    animation-timing-function: linear, ease-out, linear, ease-out;
+    animation-delay: 2s, 7s, 2s, 7s;
     animation-fill-mode: forwards;
 }
 
@@ -342,6 +498,11 @@
         top: 50%;
         left: 18.5%;
     }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 40%;
+        left: 26%;
+    }
     animation-name: mansline;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -358,6 +519,11 @@
     opacity: 0;
     @media screen and (min-width: $media-fhd) {
         top: 53%;
+    }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 40%;
+        left: 46%;
     }
     animation-name: driversline;
     animation-duration: 2s;
@@ -394,6 +560,11 @@
     @media screen  and (min-width: $media-fhd) {
         top: 50%;
         left: 18.5%;
+    }
+    @media screen and (min-width: $media-phone) and (max-width: $media-tablet-landscape) {
+        width: 15%;
+        top: 40%;
+        left: 26%;
     }
     animation-name: lastline;
     animation-duration: 2s;

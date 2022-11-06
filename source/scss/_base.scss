@@ -25,6 +25,10 @@ h1{
   @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
     font-size: 24px;
   }
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    font-size: 36px;
+    line-height: 44px;
+   }
 }
 
 h2{

@@ -1,5 +1,8 @@
 .breadcrumbs{
     padding-top: 36px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-top: 7px;
+       }
     &__list{
         display: flex;
         gap: 20px;

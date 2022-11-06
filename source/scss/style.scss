@@ -513,13 +513,26 @@
   column-gap: 20px;
   row-gap: 34px;
   margin: 50px 0 45px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    column-gap: 17px;
+    row-gap: 30px;
+    margin: 33px 0 40px;
+   }
   &__list-item{
     max-width: 380px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      width: 314px;
+     }
     &>a:hover, &a:active{
     text-decoration: underline;
     }
     &__image{
     margin-bottom: 16px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      width: 314px;
+      height: 182px;
+      margin-bottom: 8px;
+     }
     }
     &__date{
     display: inline-block;
@@ -528,12 +541,18 @@
     line-height: 22px;
     margin-top: 2px;
     margin-bottom: 7px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      margin-bottom: 5px;
+     }
     }
     &__title{
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 31px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      margin-bottom: 9px;
+     }
     }
     &__description{
     font-size: 18px;
@@ -548,16 +567,29 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    row-gap: 20px;
+   }
   &__list{
     display: flex;
     gap: 20px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      margin-top: -17px;
+     }
     &_second-row{
       margin: 23px 0 55px 200px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin: 0;
+       }
     }
     &__list-item{
       width: 280px;
       height: 270px;
       position: relative;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 203px;
+        height: 196px;
+       }
     }
   }
 }
@@ -565,28 +597,65 @@
 .catalog__list__list-item{
   &_first{
     background-color: #DBE4DB;
+    &>img{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 203px;
+        height: 196px;
+       }
+    }
   }
   &_second{
     background-color: #EADDD3;
     &>img{
       margin: 13px 36px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 149px;
+        height: 177px;
+        margin-left: 21px;
+        margin-top: 10px;
+       }
     }
   }
   &_third{
     background-color: #F8F2DA;
     >img{
       margin: 0 5px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 196px;
+        height: 196px;
+        margin: 0px;
+       }
     }
   }
   &_fourth{
     background-color: #D5D4E1;
     padding: 10px 20px;
+    &>img{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 176px;
+        height: 183px;
+        margin-top: -2px;
+        margin-left: -7px;
+       }
+    }
   }
   &_fifth{
     background-color: #F3D0DB;
+    &>img{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 203px;
+        height: 196px;
+       }
+    }
   }
   &_sixth{
     background-color: #E5EAF8;
+    &>img{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 203px;
+        height: 196px;
+       }
+    }
   }
   &__name{
     position: absolute;
@@ -598,34 +667,72 @@
     &:hover, :active{
       text-decoration: underline;
     }
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+     }
     &_first{
       top: 103px;
       bottom: 103px;
       left: 75px;
       right: 76px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 76px;
+        left: 24px;
+        right: 23px;
+        bottom: 73px;
+       }
     }
     &_second{
       top: 103px;
       bottom: 103px;
       left: 62px;
       right: 63px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 76px;
+        left: 22px;
+        right: 23px;
+        bottom: 73px;
+       }
     }
     &_third{
       top: 119px;
       bottom: 119px;
       left: 103px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 86px;
+        left: 21px;
+        right: 23px;
+        bottom: 73px;
+       }
     }
     &_fourth{
       top: 119px;
       left: 44px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 86px;
+        left: 9px;
+        right: 9px;
+       }
     }
     &_fifth{
       top: 119px;
       left: 105px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 86px;
+        left: 39px;
+        right: 36px;
+        bottom: 85px;
+       }
     }
     &_sixth{
       top: 103px;
       left: 62px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        top: 76px;
+        left: 38px;
+       }
     }
   }
 }
@@ -633,11 +740,18 @@
 .product-description{
   margin-left: 200px;
   margin-top: 2px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    margin-left: 0;
+    margin-top: 40px;
+   }
   &__text{
     max-width: 680px;
     margin: 27px 0 56px;
     line-height: 22px;
     @include flex-change(column, 15px);
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      margin: 21px 0 50px;
+     }
   }
 }
 

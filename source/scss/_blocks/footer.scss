@@ -4,9 +4,9 @@
   background-color: #434343;
   padding: 100px 110px;
   @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
-    padding: 80px 60px;
+    padding: 80px 0;
    }
-   @media screen and (min-width: $media-phone) and (max-width: $media-tablet) {
+   @media screen and (min-width: $media-phone) and (max-width: 767px) {
     padding: 70px 21px;
    }
     &__wrapper {
@@ -14,14 +14,14 @@
       column-gap: 20px;
       line-height: 22px;
       margin-bottom: 28px;
-      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+      @media screen and (min-width: $media-phone) and (max-width: 767px){
         flex-wrap: wrap;
         align-items: baseline;
         margin-bottom: 60px;
       }
       }
     &__navigation{
-      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+      @media screen and (min-width: $media-phone) and (max-width: 767px){
         display: flex;
         flex-direction: column;
         margin-bottom: 0;
@@ -44,26 +44,22 @@
       border: none;
       margin-top: 23px;
       margin-bottom: 28px;
-      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
-      width: 100%;
-      }
-      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
-        width: 100%;
+      @media screen and (min-width: $media-phone) and (max-width: 767px){
         margin: 20px 0;
       }
         &_long{
           width: 100%;
-          @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape)  {
-            width: 100%;
-           }
-           @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+           @media screen and (min-width: $media-phone) and (max-width: 767px){
             margin-bottom: 24px;
           }
-          }
+          @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+            margin-top: -48px;
+           }
+        }
       }
     &__navlist{
       @include flex-change(column, 15px);
-      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+      @media screen and (min-width: $media-phone) and (max-width: 767px){
         display: flex;
         flex-flow: column wrap;
         max-height: 100px;
@@ -73,7 +69,7 @@
         &__item{
           color: #FFFFFF;
           font-weight: 400;
-          @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+          @media screen and (min-width: $media-phone) and (max-width: 767px){
             font-size: 14px;
           }
         }
@@ -88,7 +84,7 @@
         align-items: baseline;
         justify-content: space-between;
        }
-       @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+       @media screen and (min-width: $media-phone) and (max-width: 767px){
         flex-wrap: wrap;
         align-items: baseline;
         gap: 15px;
@@ -102,6 +98,7 @@
       padding: 5px 0 0 0;
       @media screen and (min-width: $media-tablet) and (max-width: 1399px)  {
         width: 100%; 
+        margin-bottom: 15px;
        }
        @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
         width: 100%;
@@ -118,7 +115,7 @@
     &__form{
       margin-top: 25px;
       display: flex;
-      @media screen and (min-width: $media-phone) and (max-width: $media-tablet){
+      @media screen and (min-width: $media-phone) and (max-width: 767px){
         margin-top: 0;
         width: 100%;
       }

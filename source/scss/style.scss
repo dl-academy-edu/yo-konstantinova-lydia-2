@@ -955,10 +955,26 @@
   display: flex;
   margin: 52px 0 60px;
   gap: 120px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    flex-direction: column;
+    gap: 45px;
+    margin: 49px 0 54px;
+   }
   &__text{
     @include flex-change(column, 20px);
     max-width: 380px;
     line-height: 22px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      order: 1;
+      min-width: 100%;
+      text-align: center;
+      margin-left: 51px;;
+     }
+  }
+  &__form{
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      order: 2;
+     }
   }
   &__title{
     font-family: 'Montserrat', sans-serif;

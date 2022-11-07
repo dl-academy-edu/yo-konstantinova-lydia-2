@@ -5,6 +5,10 @@
     border: none;
     font-size: 14px;
     line-height: 16px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      width: 648px;
+      padding: 41px 55px;
+     }
     &__name{
       @include flex-change(column, 3px);
     }
@@ -12,8 +16,14 @@
       display: flex;
       margin-top: 20px;
       justify-content: space-between;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 100%;
+       }
       &-input{
         @include flex-change(column, 3px);
+        @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+          width: 48%;
+         }
       }
     }
     &__message-wrap{
@@ -27,6 +37,9 @@
       font-size: 14px;
       line-height: 16px;
       gap: 15px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin: 18px 0 19px;
+       }
     }
     &__input{
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -43,11 +56,17 @@
        font-size: 18px;
        font-family: 'Open Sans', sans-serif;
        padding: 14px 0 11px 20px;
+       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 100%;
+       }
       }
       &_contacts{
        width: 290px;
        height: 50px;
        margin-top: 4px;
+       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 100%;
+       }
       }
       &_message{
         resize: none;

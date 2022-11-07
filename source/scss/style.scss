@@ -761,13 +761,24 @@
   margin-top: 50px;
   background-color: #7D97DA33;
   padding: 42px 0 19px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    margin-top: 34px;
+    padding: 28px 0 17px;
+   }
   &__wrap{
     display: flex;
     margin-left: -12px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      flex-wrap: wrap;
+     }
     &__button{
       margin-left: 48px;
       margin-top: 38px;
       height: 40px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-left: 196px;
+        margin-top: 30px;
+       }
     }
   }
   &__filter{
@@ -778,15 +789,24 @@
     }
     &_color{
       margin-left: 70px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-left: 46px;
+       }
     }
     &_delivery{
       margin-left: 100px;
       display: inline-block;
       min-width: 131px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-left: 68px;
+       }
     }
     &_amount{
       margin-left: 46px;
       display: flex;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-left: 0;
+       }
     }
     &__name{
       margin-bottom: 15px;
@@ -914,10 +934,25 @@
   flex-wrap: wrap;
   margin-top: 60px;
   gap: 20px;
+  @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+    gap: 0;
+    margin-top: 50px;
+    gap: 18px;
+   }
   &__list-item{
     max-width: 380px;
     margin-bottom: 30px;
     position: relative;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+      max-width: 203px;
+      margin-bottom: 15px;
+     }
+    &>img{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        width: 203px;
+        height: 211px;
+       }
+    }
     &>a{
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -942,9 +977,23 @@
       @include flex-change(column, 18px);
       text-align: center;
       margin-top: 28px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        @include flex-change(column, 5px);
+        margin-top: 12px;
+       }
     }
     &__name{
       font-size: 14px;
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        font-size: 12px;
+        line-height: 16px;
+       }
+    }
+    &__cost{
+      @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        font-size: 14px;
+        line-height: 19px;
+       }
     }
   }
 }

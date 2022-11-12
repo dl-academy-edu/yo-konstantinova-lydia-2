@@ -231,6 +231,11 @@
         width: 192px;
         height: 225px;
       }
+      @media screen and (max-width:767px) {
+        width: 183px;
+        height: 215px;
+        margin-left: 28px;
+      }
      }
      &_third{
       margin: 0 5px;
@@ -251,6 +256,10 @@
       font-size: 14px;
       line-height: 19px;
     }
+    @media screen and (max-width: 767px) {
+      margin-top: 21px;
+      column-gap: 15.5px;
+    }
     &__slider{
       @media screen and (max-width:$media-tablet-landscape) {
         display: flex;
@@ -267,16 +276,25 @@
       @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
       width: 36px;
       height: 36px;
-        padding: 4px 11px 6px 8px;
+      padding: 4px 11px 6px 8px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 33px;
+        height: 33px;
+        padding: 3px 11px 6px 8px;
       }
     }
+  }
     &__text{
       width: 580px;
       margin: -2px 0 0 2px;
       line-height: 21px;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
   }
-}
 
 .category-products__list-item{
   &_first{
@@ -297,6 +315,7 @@
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: white;
     text-align: center;
+    line-height: 32px;
     z-index: 1;
     &:hover,
     &:active{
@@ -308,13 +327,12 @@
       left: 75px;
       right: 76px;
       @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
-        line-height: 32px;
         top: 95px;
         left: 62px;
       }
       @media screen and (max-width: 767px) {
-        top: 92px;
-        left: 60px;
+        top: 90px;
+        left: 57px;
       }
     }
     &_second{
@@ -323,9 +341,12 @@
       left: 62px;
       right: 63px;
       @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
-        line-height: 32px;
         top: 95px;
         left: 62px;
+      }
+      @media screen and (max-width: 767px) {
+        top: 90px;
+        left: 57px;
       }
     }
     &_third{
@@ -363,6 +384,7 @@
   }
   @media screen and (max-width:767px) {
     flex-wrap: wrap;
+    margin-top: 80px;
   }
   &__image{
     background-color: #E1F0F7;
@@ -374,6 +396,10 @@
       margin: 30px 0 0 20px;
       line-height: 44px;
     }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
   }
   &__list{
     width: 326px;
@@ -382,6 +408,10 @@
       margin-top: 6px;
       width: 76%;
     }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+      width: 74%;
+    }
     &-item{
       padding-left: 60px;
       line-height: 33px;
@@ -389,6 +419,9 @@
       @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
         padding-left: 18px;
         line-height: 31px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 8px 167px 7px 0;
       }
     }
   }
@@ -403,13 +436,18 @@
       line-height: 19px;
     }
     @media screen and (max-width:767px) {
-      width: 85%;
-      margin: 21px 0 0 19px;
+      width: 100%;
+      margin: 11px 0 0 0;
       font-size: 14px;
       line-height: 19px;
     }
     &__second-p{
       margin-top: 16px;
+      @media screen and (max-width:767px) {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
   }
   &__btn{
@@ -417,6 +455,9 @@
     @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
       margin: 20px 0 0 20px;
       padding-top: 12px;
+    }
+    @media screen and (max-width:767px) {
+      margin: 0;
     }
   }
 }
@@ -430,17 +471,33 @@
       padding-top: 8px;
       padding-bottom: 8px;
     }
+    @media screen and (max-width: 767px) {
+      padding-top: 8px;
+      padding-bottom: 7px;
+      padding-left: 3%;
+      margin-left: -4%;
+    }
   }
   &_second{
     margin-top: 11px;
     @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
       margin-top: 5px;
     }
+    @media screen and (max-width: 767px) {
+      margin-top: -1%;
+      font-size: 24px;
+      line-height: 31px;
+    }
   }
   &_third{
     margin-top: 22px;
     @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
       margin-top: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+      font-size: 24px;
+      line-height: 31px;
     }
   }
 }
@@ -456,6 +513,8 @@
   .awards-section__list{
     align-items: baseline;
     flex-wrap: wrap;
+    margin: 80px 0 75px 0;
+    row-gap: 25px;
     &__list-item{
       &_first{
         order: 3;
@@ -520,6 +579,7 @@
   }
   @media screen and (max-width:767px) {
     flex-wrap: wrap;
+    gap: 35px;
   }
   &__section{
     position: relative; 
@@ -542,7 +602,9 @@
         margin: 0;
       }
       @media screen and (max-width:767px) {
-        padding: 0;
+        padding: 21px 0 25px 30px;
+        margin-top: -15px;
+        width: 100vw;
       }
     }
     &__text{
@@ -552,11 +614,20 @@
       @media screen and (max-width:$media-tablet-landscape) {
         width: 90%;
       }
+      @media screen and (max-width:767px) {
+        width: 100%;
+        margin: 0 0 0 0;
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
     &__btn{
       margin-top: 22px;
       @media screen and (min-width:$media-tablet) and (max-width:$media-tablet-landscape) {
         margin-top: 20px;
+      }
+      @media screen and (max-width:767px) {
+        margin-top: 15px;
       }
     }
     &__map{
@@ -569,8 +640,10 @@
         margin-bottom: 76px;
       }
       @media screen and (max-width:767px) {
-        width: 90%;
+        width: 100%;
         height: 196px;
+        margin-top: -90px;
+        margin-bottom: 45px;
       }
     }
   }
@@ -582,6 +655,10 @@
     line-height: 36px;
     margin-left: 15px;
     margin-bottom: -18px;
+  }
+  @media screen and (max-width:767px) {
+    font-size: 24px;
+    line-height: 31px;
   }
 }
 
@@ -598,9 +675,9 @@
       margin: 0;
     }
     @media screen and (max-width:767px) {
-      padding: 0;
-      margin: 0;
-      width: 100%;
+      padding: 25px 0 0 35px;
+      margin: -15px 0 0 -35px;
+      width: 100vw;
     }
   }
 }

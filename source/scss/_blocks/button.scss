@@ -22,5 +22,10 @@
       background-color: #C7C1C1;
       cursor: auto;
     }
+    @media screen and (max-width:767px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px 22px;
+    }
   }
   

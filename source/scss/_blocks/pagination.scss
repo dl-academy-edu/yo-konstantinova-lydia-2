@@ -4,6 +4,10 @@
     justify-content: space-between;
     margin-top: 42px;
     margin-bottom: 57px;
+    @media screen and (max-width: 767px) {
+        margin-top: 1.5%;
+        margin-bottom: 14%;
+    }
     &__arrow-left{
         &:hover, &:active{
             background-image: url(/img/icons/swipe_left_hover.svg);
@@ -24,6 +28,11 @@
         display: flex;
         gap: 64px;
         font-family: 'Montserrat', sans-serif;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            gap: 50px;
+        }
     }
 }
 

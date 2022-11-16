@@ -1,9 +1,21 @@
 .breadcrumbs{
     padding-top: 36px;
+    @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
+        margin-top: 7px;
+       }
+       @media screen and (max-width: 767px) {
+        padding-top: 8.5%;
+       }
     &__list{
         display: flex;
         gap: 20px;
         margin-top: -11px;
+        @media screen and (max-width: 767px) {
+            margin-top: -1.5%;
+            gap: 14px;
+            font-size: 16px;
+            line-height: 20px;
+           }
         &__list-item_current{
             opacity: 0.5;
         }

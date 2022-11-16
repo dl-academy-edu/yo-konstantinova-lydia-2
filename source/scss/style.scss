@@ -859,7 +859,7 @@
 .catalog__list__list-item{
   &_first{
     background-color: #DBE4DB;
-    &>img{
+    &>picture>img{
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 203px;
         height: 196px;
@@ -872,7 +872,7 @@
   }
   &_second{
     background-color: #EADDD3;
-    &>img{
+    &>picture>img{
       margin: 13px 36px;
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 149px;
@@ -890,7 +890,7 @@
   }
   &_third{
     background-color: #F8F2DA;
-    >img{
+    &>picture>img{
       margin: 0 5px;
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 196px;
@@ -912,7 +912,7 @@
     @media screen and (max-width: $media-tablet-landscape) {
       margin: 0;
      }
-    &>img{
+    &>picture>img{
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 176px;
         height: 183px;
@@ -929,7 +929,7 @@
   }
   &_fifth{
     background-color: #F3D0DB;
-    &>img{
+    &>picture>img{
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 203px;
         height: 196px;
@@ -942,7 +942,7 @@
   }
   &_sixth{
     background-color: #E5EAF8;
-    &>img{
+    &>picture>img{
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 203px;
         height: 196px;
@@ -1339,7 +1339,7 @@
       max-width: 160px;
       margin-bottom: 8%;
      }
-    &>img{
+    &>picture>img{
       @media screen and (min-width: $media-tablet) and (max-width: $media-tablet-landscape) {
         width: 203px;
         height: 211px;

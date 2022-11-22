@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lato:wght@400;700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Grid</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <div class="container">
+            @@include('blocks/breadcrumbs.html', {
+                "title": "Grid",
+                "href": "grid.html",
+                "text": "Grid"
+            })
+        </div>
+        <section class="grid">
+            <div class="grid__box grid__box-1">
+                <div class="grid__box-1__text">
+                    <p class="grid__box-1__text__name">IPHONE 6S</p>
+                    <p class="grid__box-1__text__title">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+                    <p class="grid__box-1__text__link">Learn more or visit an Apple Store today</p>
+                </div>
+                <picture>
+                    <source srcset="/img/images/phone_2x.png 2x" alt="phone">
+                    <img src="/img/images/phone.png" alt="phone" class="grid__box-1__img">
+                </picture>
+            </div>
+            <div class="grid__box grid__box-2">
+                <p class="grid__box-2__name">LEARN MORE</p>
+                <p class="grid__box-2__title">How to Use Rotary Evaporator in Chemical Labs</p>
+                <a href="" class="grid__box-2__link">Download now</a>
+            </div>
+            <div class="grid__box grid__box-3">
+                <picture>
+                    <source srcset="/img/images/keyboard_2x.png 2x" alt="keyboard">
+                    <img src="/img/images/keyboard.png" alt="keyboard" class="grid__box-3__img">
+                </picture>
+                <p class="grid__box-3__title">Our Brand New Keyboard</p>
+                <a href="" class="grid__box-3__link">LEARN ›</a>
+            </div>
+            <div class="grid__box grid__box-4">
+                <div class="grid__box-4__wrap">
+                    <p class="grid__box-4__name">IMAC.RETINA</p>
+                    <p class="grid__box-4__title">Hardly a month passes these days where</p>
+                    <picture>
+                        <source srcset="/img/images/monitor_2x.png 2x" alt="monitor">
+                        <img src="/img/images/monitor.png" alt="monitor" class="grid__box-4__img">
+                    </picture>
+                </div>
+                <div class="grid__box-4__text-wrap">
+                    <p class="grid__box-4__text-wrap__text">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+                    <a href="" class="grid__box-4__text-wrap__link">DOWNLOAD NOW ›</a>
+                </div>
+            </div>
+            <div class="grid__box grid__box-5">
+                <div class="grid__box-5__img-wrap">
+                    <p class="grid__box-5__img-wrap__popular">POPULAR</p>
+                    <picture>
+                        <source srcset="/img/images/floppy_2x.png 2x" alt="floppy">
+                        <img src="/img/images/floppy.png" alt="floppy" class="grid__box-5__img">
+                    </picture>
+                    <p class="grid__box-5__img-wrap__meet">MEET</p>
+                </div>
+                <div class="grid__box-5__text-wrap">
+                    <p class="grid__box-5__text-wrap__title">iCloud</p>
+                    <p class="grid__box-5__text-wrap__text">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                    <a href="" class="grid__box-5__text-wrap__link">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="grid__box grid__box-6">
+                <span class="grid__box-6__mark">BEST CHOICE</span>
+                <p class="grid__box-6__title">Much MuchBetter Experience</p>
+                <picture>
+                    <source srcset="/img/images/laptop_2x.png 2x" alt="laptop">
+                    <img src="/img/images/laptop.png" alt="laptop" class="grid__box-6__img">
+                </picture>
+            </div>
+            <div class="grid__box grid__box-7">
+                <picture>
+                    <source srcset="/img/images/gamepad_2x.png 2x" alt="gamepad">
+                    <img src="/img/images/gamepad.png" alt="gamepad" class="grid__box-7__img">
+                </picture>
+                <p class="grid__box-7__title">Games ourpasion</p>
+                <a href="" class="grid__box-7__link">LEARN ›</a>
+            </div>
+            <div class="grid__box grid__box-8">
+                <img width="59" height="59" src="/img/icons/grid_insta.svg" alt="instagram logo" class="grid__box-8__img">
+                <a href="" class="grid__box-8__link">Follow me ›</a>
+            </div>
+            <div class="grid__box grid__box-9">
+                <picture>
+                    <source srcset="/img/images/tv_2x.png 2x" alt="tv">
+                    <img src="/img/images/tv.png" alt="tv" class="grid__box-9__img">
+                </picture>
+                <p class="grid__box-9__title">More than just a display,  it’s a vision</p>
+            </div>
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -50,7 +50,11 @@
                       "text": "explore now"
                     })
                 </div>
-              <img width="635" height="461" class="banner__image" src="/img/images/monster.png" alt="banner image">
+              <picture>
+                <source srcset="/img/images/monster_mobile.png, /img/images/monster_mobile_2x.png 2x" media="(max-width: 767px)" alt="monster">
+                <source srcset="/img/images/monster_tablet.png, /img/images/monster_tablet_2x.png 2x" media="(max-width: 1024px)" alt="monster">
+                <img src="/img/images/monster.png" alt="monster" class="banner__image">
+            </picture>
             </div>
                 <p class="shipping-section bold">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
@@ -58,19 +62,35 @@
           <h2 class="bold">Category Products</h2>
           <ul class="category-products__list">
             <li class="category-products__list-item category-products__list-item_first">
-                <img width="280" height="270" src="/img/images/apparel_kids.png" alt="sweater"  class="category-products__img">
+                <picture>
+                    <source srcset="/img/images/apparel_kids_mobile.png, /img/images/apparel_kids_mobile_2x.png 2x" media="(max-width: 767px)" alt="sweater">
+                    <source srcset="/img/images/apparel_kids_tablet.png, /img/images/apparel_kids_tablet_2x.png 2x" media="(max-width: 1024px)" alt="sweater">
+                    <img src="/img/images/apparel_kids.png" alt="sweater" class="category-products__img">
+                </picture>
                 <a href="#" class="category-products__list-item-name category-products__list-item-name_first bold big">APPAREL KIDS</a>
             </li>
             <li class="category-products__list-item category-products__list-item_second">
-                <img width="208" height="244" src="/img/images/holiday_shop.png" alt="christmas stocking" class="category-products__img category-products__img_second">
+                <picture>
+                    <source srcset="/img/images/holiday_shop_mobile.png, /img/images/holiday_shop_mobile_2x.png 2x" media="(max-width: 767px)" alt="christmas stocking">
+                    <source srcset="/img/images/holiday_shop_tablet.png, /img/images/holiday_shop_tablet_2x.png 2x" media="(max-width: 1024px)" alt="christmas stocking">
+                    <img src="/img/images/holiday_shop.png" alt="christmas stocking" class="category-products__img category-products__img_second">
+                </picture>
                 <a href="#" class="category-products__list-item-name category-products__list-item-name_second bold big">HOLIDAY SHOP</a>
             </li>
             <li class="category-products__list-item category-products__list-item_third">
-                <img width="270" height="270" src="/img/images/toys.png" alt="deer" class="category-products__img category-products__img_third">
+                <picture>
+                    <source srcset="/img/images/toys_mobile.png, /img/images/toys_mobile_2x.png 2x" media="(max-width: 767px)" alt="deer">
+                    <source srcset="/img/images/toys_tablet.png, /img/images/toys_tablet_2x.png 2x" media="(max-width: 1024px)" alt="deer">
+                    <img src="/img/images/toys.png" alt="deer" class="category-products__img category-products__img_third">
+                </picture>
                 <a href="toys.html" class="category-products__list-item-name category-products__list-item-name_third bold big">TOYS</a>
             </li>
             <li class="category-products__list-item category-products__list-item_fourth">
-                <img width="240" height="250" src="/img/images/accessories.png" alt="yeti" class="category-products__img category-products__img_fourth">
+                <picture>
+                    <source srcset="/img/images/accessories_mobile.png, /img/images/accessories_mobile_2x.png 2x" media="(max-width: 767px)" alt="yeti">
+                    <source srcset="/img/images/accessories_tablet.png, /img/images/accessories_tablet_2x.png 2x" media="(max-width: 1024px)" alt="yeti">
+                    <img src="/img/images/accessories.png" alt="yeti" class="category-products__img category-products__img_fourth">
+                </picture>
                 <a href="#" class="category-products__list-item-name category-products__list-item-name_fourth bold big">ACCESSORIES</a>
             </li>
         </ul>
@@ -92,8 +112,8 @@
       </section>
       <section class="delivery-section container">
         <picture>
-            <source srcset="/img/images/woman_mobile.jpg" media="(max-width: 767px" alt="woman">
-            <source srcset="/img/images/woman_tablet.jpg" media="(max-width: 1024px)">
+            <source srcset="/img/images/woman_mobile.jpg, /img/images/woman_mobile_2x.jpg 2x" media="(max-width: 767px)" alt="woman">
+            <source srcset="/img/images/woman_tablet.jpg, /img/images/woman_tablet_2x.jpg 2x" media="(max-width: 1024px)" alt="woman">
             <img src="/img/images/woman.png" alt="woman" class="delivery-section__image">
         </picture>
           <div class="delivery-section__wrapper">
@@ -120,16 +140,32 @@
           <h2 class="hidden">awards</h2>
           <ul class="awards-section__list">
               <li class="awards-section__list__list-item awards-section__list__list-item_first">
-                  <img width="193" height="60" src="/img/images/mail.png" alt="mail.ru group" class="awards-section__list__img-one">
+                  <!-- <img width="193" height="60" src="/img/images/mail.png" alt="mail.ru group" class="awards-section__list__img-one"> -->
+                  <picture>
+                    <source srcset="/img/images/mail_2x.png 2x" alt="mail.ru group">
+                    <img src="/img/images/mail.png" alt="mail.ru group" class="awards-section__list__img-one">
+                </picture>
               </li>
               <li class="awards-section__list__list-item awards-section__list__list-item_second">
-                  <img width="179" height="61" src="/img/images/apple.png" alt="apple" class="awards-section__list__img-two">
+                  <!-- <img width="179" height="61" src="/img/images/apple.png" alt="apple" class="awards-section__list__img-two"> -->
+                  <picture>
+                    <source srcset="/img/images/apple_2x.png 2x" alt="apple">
+                    <img src="/img/images/apple.png" alt="apple" class="awards-section__list__img-two">
+                </picture>
               </li>
               <li class="awards-section__list__list-item awards-section__list__list-item_third">
-                  <img width="216" height="46" src="/img/images/eltex.png" alt="eltex" class="awards-section__list__img-three">
+                  <!-- <img width="216" height="46" src="/img/images/eltex.png" alt="eltex" class="awards-section__list__img-three"> -->
+                  <picture>
+                    <source srcset="/img/images/eltex_2x.png 2x" alt="eltex">
+                    <img src="/img/images/eltex.png" alt="eltex" class="awards-section__list__img-three">
+                </picture>
               </li>
               <li class="awards-section__list__list-item awards-section__list__list-item_fourth">
-                  <img width="211" height="40" src="/img/images/owox.png" alt="owox" class="awards-section__list__img-four">
+                  <!-- <img width="211" height="40" src="/img/images/owox.png" alt="owox" class="awards-section__list__img-four"> -->
+                  <picture>
+                    <source srcset="/img/images/owox_2x.png 2x" alt="owox">
+                    <img src="/img/images/owox.png" alt="owox" class="awards-section__list__img-four">
+                </picture>
               </li>
           </ul>
       </section>
